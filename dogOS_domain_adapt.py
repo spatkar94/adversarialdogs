@@ -17,8 +17,8 @@ import pandas as pd
 import random
 from itertools import cycle
 
-torch.manual_seed(0)
 
+#define dataset class for reading in training validation and test whole slide image patches from dog OS tumors
 class DogDataset(Dataset):
      def __init__(self, rootdir, level, transform = None, mode = None):
           self.rootdir = rootdir
@@ -32,6 +32,8 @@ class DogDataset(Dataset):
           self.patches = []
           self.fnames = []
           self.slidenames = []
+
+          #assigning class labels to each whole slide image patch based on overlapping pathologist annotations
           for i in range(len(files)):
                x = files[i]
                ws = float(re.findall(r"ws-\d.\d\d", x)[0].split("-")[1])
@@ -88,19 +90,16 @@ class DogDataset(Dataset):
 
 
           
-          #ll = list(np.where(np.logical_or(np.array(self.labels) != 'NA', np.array(self.labels) != 'exclude'))[0])
           ll = list(range(len(self.labels)))
   
 
           
+          #define train validation and test splits (80% train, 10% validation, 10% test)
           np.random.seed(123)
           testidx = np.random.choice(np.array(ll), int(len(ll)*0.1))
           xx = list(np.setdiff1d(np.array(ll), np.array(testidx)))
           validx = list(np.random.choice(xx,int(len(ll)*0.1)))
           trainidx = list(np.setdiff1d(np.array(xx), np.array(validx)))
-          #trainidx = np.random.choice(trainidx, 20000)
-          #validx = np.random.choice(validx, 10000)
-          #testidx = np.random.choice(testidx, 10000)
 
 
           if mode == 'train':
@@ -142,6 +141,7 @@ class DogDataset(Dataset):
                img = self.transform(img)
           return img, self.labels[idx]
 
+#define dataset class for reading in training and test whole slide image patches from human OS tumors
 class HumanDataset(Dataset):
      def __init__(self, rootdir, level, transform = None, mode = None):
           self.rootdir = rootdir
@@ -215,25 +215,12 @@ class HumanDataset(Dataset):
 
 
 
-          
+          #define train and test splits (~3% train (2000 patches), ~97% test)
           np.random.seed(123)
-          #train_slides = np.random.choice(self.slides, int(len(self.slides)*0.2))
-          #test_slides = np.setdiff1d(self.slides, train_slides)
-          #testidx = [i for i in range(len(self.slidenames)) if self.slidenames[i] in test_slides]
-          #trainidx = []
-          #for lab in np.unique(self.labels):
-          #     trainidx.append(np.random.choice(np.array([i for i in ll if self.labels[i] == lab]), 30))
           trainidx = np.random.choice(np.array(ll), 2000)
-          #trainidx = [j for i in trainidx for j in i] 
-          #xx = list(np.setdiff1d(np.array(ll), np.array(testidx)))
-          #validx = list(np.random.choice(xx,int(len(ll)*0.1)))
           testidx = list(np.setdiff1d(np.array(ll), np.array(trainidx)))
-          #trainidx = [i for i in range(len(self.slidenames)) if self.slidenames[i] in train_slides]
-          #trainidx = np.random.choice(trainidx, 20000)
-          #validx = np.random.choice(validx, 10000)
-          #testidx = np.random.choice(testidx, 10000)
 
-
+          
           if mode == 'train':
                self.labels = [self.labels[i] for i in trainidx]
                self.fnames = [self.fnames[i] for i in trainidx]
@@ -245,10 +232,6 @@ class HumanDataset(Dataset):
                self.fnames = [self.fnames[i] for i in unlabeledidx]
                self.patches = [self.patches[i] for i in unlabeledidx]
                
-          #elif mode == 'val':
-          #     self.labels = [self.labels[i] for i in validx]
-          #     self.fnames = [self.fnames[i] for i in validx]
-          #     self.patches = [self.patches[i] for i in validx]
                
           elif mode == 'test':
                self.labels = [self.labels[i] for i in testidx]
@@ -277,6 +260,7 @@ class HumanDataset(Dataset):
                img = self.transform(img)
           return img, self.labels[idx]
 
+#define gradient reversal layer for domain classifier
 class GradientReversal(torch.autograd.Function):
      @staticmethod
      def forward(ctx, x):
@@ -291,6 +275,7 @@ def grad_reverse(x, lambd):
      return GradientReversal.apply(x)
 
 
+#define feature extraction backbone
 class FeatureExtractor(torch.nn.Module):
      def __init__(self, backbone, use_pretrained=True, freeze_weights = False, freeze_point = 8):
           super(FeatureExtractor, self).__init__()
@@ -323,7 +308,7 @@ class FeatureExtractor(torch.nn.Module):
      def forward(self, x):
           return self.backbone(x)
 
-
+#define histological subtype classifier/domain classifier
 class Classifier(torch.nn.Module):
      def __init__(self, indim, num_classes, hidden_layers = 1, hdims = [512], reverse_grad = False, lambda_ = 1.0):
           super(Classifier, self).__init__()
@@ -354,6 +339,7 @@ class Classifier(torch.nn.Module):
           return self.fc(x)
 
 
+#define sampling strategy for sampling minibatches during training
 class SlideSampler(Sampler):
      def __init__(self, dataset):
           self.num_samples = len(dataset)
@@ -381,6 +367,7 @@ class SlideSampler(Sampler):
      def __len__(self):
           return len(self.indices)
 
+#Unsupervised domain adatation (Ganin & Lempinsky et al 2014)
 def train_unsupervised(feature_extractor, classifier, discriminator, loss_fn, optimizer, source_loader, target_loader):
      feature_extractor.train()
      classifier.train()
@@ -419,6 +406,7 @@ def train_unsupervised(feature_extractor, classifier, discriminator, loss_fn, op
      print('Train Epoch {}: overall classifier Loss@:{:.5f} overall domain Loss@:{:.5f}'.format(epoch, epoch_loss, edomain_loss))
      return epoch_loss
 
+#Semi-supervised domain adaptation
 def train_semisupervised(feature_extractor, classifier, discriminator, loss_fn, optimizer, source_loader, target_loader, unlabeledloader):
      feature_extractor.train()
      classifier.train()
@@ -458,6 +446,7 @@ def train_semisupervised(feature_extractor, classifier, discriminator, loss_fn, 
      print('Train Epoch {}: overall classifier Loss@:{:.5f} overall domain Loss@:{:.5f}'.format(epoch, epoch_loss, edomain_loss))
      return epoch_loss
 
+#supervised domain adaptation
 def train_supervised(feature_extractor, classifier, discriminator, loss_fn, optimizer, source_loader, target_loader):
      feature_extractor.train()
      classifier.train()
@@ -499,6 +488,7 @@ def train_supervised(feature_extractor, classifier, discriminator, loss_fn, opti
      print('Train Epoch {}: overall classifier Loss@:{:.5f} overall domain Loss@:{:.5f}'.format(epoch, epoch_loss, edomain_loss))
      return epoch_loss
 
+#evaluation of classifier predictions
 def test(feature_extractor, classifier, test_data_loader, loss_fn, epoch, classes):
      feature_extractor.eval()
      classifier.eval()
@@ -557,8 +547,7 @@ def test(feature_extractor, classifier, test_data_loader, loss_fn, epoch, classe
                     per_class_recall[c] = true_pred/n_target
 
 
-          #per_class_prec = np.array([(cm[:,i]/sum(cm[:,i]))[i] for i in range(cm.shape[0])])
-          #per_class_recall = np.array([(cm[i,:]/sum(cm[i,:]))[i] for i in range(cm.shape[1])])
+
           per_class_f1 = 2*np.array(list(per_class_prec.values()))*np.array(list(per_class_recall.values()))/(np.array(list(per_class_prec.values())) + np.array(list(per_class_recall.values())))
           mPrec = np.nanmean(np.array(list(per_class_prec.values())))
           mRecall = np.nanmean(np.array(list(per_class_recall.values())))
@@ -572,6 +561,7 @@ def test(feature_extractor, classifier, test_data_loader, loss_fn, epoch, classe
      return epoch_loss, mPrec, mRecall, mF1, list(per_class_prec.values()), list(per_class_recall.values()), list(per_class_f1), elosses
 
 
+#function to save model weights
 def save_model(model, name):
      model_folder = "saved_models"
      if not os.path.exists(model_folder):
@@ -580,6 +570,7 @@ def save_model(model, name):
      torch.save(model.state_dict(), "{}/{}_model_best.pth".format(model_folder,name))
 
 
+#main function
 if __name__ == "__main__":
      level0 = "m0"
      base = FeatureExtractor(backbone = 'resnet50', use_pretrained = True, freeze_weights=False)
@@ -592,9 +583,11 @@ if __name__ == "__main__":
      base = base.cuda()
      os_classifier = os_classifier.cuda()
      domain_classifier = domain_classifier.cuda()
-
+     
+     #normalize pixel intensities to follow standard normal range (mean 0, std ~ 1)
      normalize = transforms.Normalize(mean=[0.8938, 0.5708, 0.7944], std = [0.1163, 0.1528, 0.0885])
 
+     #data augmentation transforms
      train_transforms = transforms.Compose([
           transforms.Resize((224,224)),
           #transforms.RandomResizedCrop(224),
@@ -611,7 +604,6 @@ if __name__ == "__main__":
 
      sourcedataset = DogDataset('./patches_10x', level = level0, transform = train_transforms, mode = "train")
      targetdataset = HumanDataset('/data/spatkar/patches_human', level = level0, transform = train_transforms, mode = "train")
-     #targetdataset2 = HumanDataset('/data/spatkar/patches_human', level = level0, transform = train_transforms, mode = "unlabeled")
 
      valdataset = DogDataset('./patches_10x', level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "val")
      testdataset = DogDataset('./patches_10x', level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "test")
@@ -620,16 +612,17 @@ if __name__ == "__main__":
 
      ss = SlideSampler(sourcedataset)
      st = SlideSampler(targetdataset)
-     #su = SlideSampler(targetdataset2)
+
      sourceloader = DataLoader(sourcedataset, batch_size = 128, num_workers = 2, sampler = ss)
      targetloader = DataLoader(targetdataset, batch_size = 128, num_workers = 2, sampler = st)
-     #unlabeledloader = DataLoader(targetdataset2, batch_size = 64, num_workers = 2, sampler = su)
+
      valloader = DataLoader(valdataset, batch_size = 32, shuffle = False, num_workers = 2)
      testloader = DataLoader(testdataset, batch_size = 32, shuffle = False, num_workers = 2)
      testloader2 = DataLoader(testdataset2, batch_size = 32, shuffle = False, num_workers = 2)
 
      train_labs, train_counts = np.unique(sourcedataset.labels, return_counts=True)
-     weights = np.array([max(train_counts)/train_counts[i] for i in range(len(train_counts))])
+     
+     #defining multi-class weights of the weighted cross-entropy loss function (model gets penalized more for classification error on rare classes)
      weights = np.array([1.1,1.1,1.1,1.0,1.0,1,1])
      train_labs2, train_counts2 = np.unique(targetdataset.labels, return_counts=True)
      
@@ -656,29 +649,21 @@ if __name__ == "__main__":
      params_to_update = []
      for name,param in base.named_parameters():
           if param.requires_grad == True:
-               #torch.nn.init.uniform_(param, a = -0.005, b=0.005)
                params_to_update.append(param)
-               #print("\t",name)
 
      optimizer = torch.optim.Adam(params_to_update + list(os_classifier.parameters()) + list(domain_classifier.parameters()), lr, weight_decay=5e-4)
-     #scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, num_epochs)
-     scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9)
+
+
      ###########################################################
-     ### Set the loss function here ###
+     ### Setting the loss function here ###
      ###########################################################
      class_weights = torch.FloatTensor(weights).cuda()
      loss_fn = torch.nn.CrossEntropyLoss(weight = class_weights)
-     #domain_loss_fn = torch.nn.functional.binary_cross_entropy_with_logits()
 
 
 
      dataset_dict = {"train": valdataset, "val": testdataset}
-     #record_keeper, _, _ = logging_presets.get_record_keeper("example_logs", "example_tensorboard")
-     #hooks = logging_presets.get_hook_container(record_keeper)
      epoch = 0
-     #_,best_precision, best_recall, best_f1, vper_class_prec, vper_class_recall, vper_class_f1 = test(model, valloader, loss_fn, epoch, valdataset.classes, level0)
-     #_,test_precision, test_recall, test_f1, tper_class_prec, tper_class_recall, tper_class_f1 = test(model, testloader, loss_fn, epoch, testdataset.classes, level0)
-     global_iteration = {"iter": 0}
      val_r = []
      val_p = []
      val_best_f1 = 0.0
@@ -707,6 +692,7 @@ if __name__ == "__main__":
      num_epochs = 15
      for epoch in range(1, num_epochs+1):
           lambd = 0.0
+          #defining the adversarial learning parameter (lambda) annealing schedule (Ganin & Lempinsky et al, 2014)
           if epoch > 0:
                if (epoch-1)%3 == 0:
                     lambd = 0.0
@@ -714,6 +700,8 @@ if __name__ == "__main__":
                     lambd = (2. / (1. + np.exp(-10 * float((epoch-1))/num_epochs)) - 1)
                
           domain_classifier.set_lambda(lambd)
+
+          #defining the learning rate update schedule (Ganin & Lempinsky et al, 2014)
           lr = 1e-3 / (1. + 10 * float(epoch)/num_epochs)**0.75
           optimizer.lr = lr
           train_losses.append(train_supervised(base, os_classifier, domain_classifier, loss_fn, optimizer, sourceloader, targetloader))
@@ -740,13 +728,14 @@ if __name__ == "__main__":
           test2_precisions.append(t2per_class_prec)
           test2_recalls.append(t2per_class_recall)
 
+          #save model achieving the best classification performance on the validation dataset only.
           if val_f1 > best_f1:
                best_f1 = val_f1
                val_best_f1 = val_f1
                val_best_test_f1 = test2_f1
                save_model(base, 'resnet50_allclasses_10x_domain_adapt_final_fe_033122{}'.format(level0))
                save_model(os_classifier, 'resnet50_allclasses_10x_domain_adapt_final_os_classifier_033122{}'.format(level0))
-          #scheduler.step()
+
 
      with open('./resnet50_allclasses_10x_domain_adapt_train_losses_final{}'.format(level0),'wb') as f:
           pickle.dump(train_losses,f)
