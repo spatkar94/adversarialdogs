@@ -179,20 +179,20 @@ avg_sil_values <- t(sapply(k.values, function(k) {
 }))
 ```
 
-    ## Time difference of 0.760258 secs
-    ## Time difference of 0.8309579 secs
-    ## Time difference of 0.9160409 secs
-    ## Time difference of 1.15488 secs
-    ## Time difference of 1.296112 secs
-    ## Time difference of 1.401663 secs
-    ## Time difference of 1.543623 secs
-    ## Time difference of 1.752326 secs
-    ## Time difference of 2.040061 secs
-    ## Time difference of 2.09562 secs
-    ## Time difference of 2.170299 secs
-    ## Time difference of 2.297693 secs
-    ## Time difference of 2.425382 secs
-    ## Time difference of 2.525557 secs
+    ## Time difference of 0.7048991 secs
+    ## Time difference of 0.8366032 secs
+    ## Time difference of 0.8847442 secs
+    ## Time difference of 1.11717 secs
+    ## Time difference of 1.261885 secs
+    ## Time difference of 1.440611 secs
+    ## Time difference of 1.523714 secs
+    ## Time difference of 1.76036 secs
+    ## Time difference of 2.000059 secs
+    ## Time difference of 2.10437 secs
+    ## Time difference of 2.169828 secs
+    ## Time difference of 2.30223 secs
+    ## Time difference of 2.39883 secs
+    ## Time difference of 2.516907 secs
 
 # Plot K-means clustering analysis results
 
