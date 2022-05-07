@@ -1,2 +1,2 @@
-# adversarialdogs
-Repository containing the scripts to perform domain adversarial training of neural networks for classification of rare histological subtypes of osteosarcoma in canines and humans
+# Deep domain adversarial learning for classification of rare histological subtypes in dog and human osteosarcoma
+This repository contains the codes to train a CNN to classify histological variants of osteosarcoma in a species agnostic fashion using adversarial learning. 
