@@ -151,8 +151,9 @@ print(pp2)
 #Plot the distribution of burden for each OS subtype in each cluster
 c1 <- clindat_all
 c1$cluster <- as.character(as.numeric(k7$cluster))
-c1$group <- c("{1,2}","{3}")[as.numeric(k7$cluster==3)+1]
-dist_mat = melt(subset(c1, select = c("CB","FB","GC","HN","OB","VR","cluster")))
+c1$group <- c("{cluster 1,2}","{cluster 3}")[as.numeric(k7$cluster==3)+1]
+colnames(c1)[colnames(c1) == "HN"] = "N"
+dist_mat = melt(subset(c1, select = c("CB","FB","GC","N","OB","VR","cluster")))
 colnames(dist_mat) <- c("cluster","variant","area")
 
 stat.test <- dist_mat %>% group_by(variant) %>% t_test(area ~ cluster) %>% add_significance("p") %>% add_xy_position(x = "variant", dodge = 0.8)
@@ -162,7 +163,7 @@ bxp <- ggplot(
 p5 <- bxp + stat_pvalue_manual(
   stat.test,  label = "{p.signif}", 
   tip.length = 0, hide.ns = TRUE
-  ) +  ylab("Burden") + xlab("subtype") + theme_classic()
+  ) +  ylab("Burden") + xlab("variant") + theme_classic()
 print(ggarrange(p5, labels = "", nrow = 1, ncol = 1))
 
 ```

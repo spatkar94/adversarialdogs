@@ -179,20 +179,20 @@ avg_sil_values <- t(sapply(k.values, function(k) {
 }))
 ```
 
-    ## Time difference of 0.7583749 secs
-    ## Time difference of 0.84653 secs
-    ## Time difference of 0.913131 secs
-    ## Time difference of 1.133732 secs
-    ## Time difference of 1.328039 secs
-    ## Time difference of 1.392274 secs
-    ## Time difference of 1.543587 secs
-    ## Time difference of 1.758681 secs
-    ## Time difference of 2.050297 secs
-    ## Time difference of 2.103535 secs
-    ## Time difference of 2.202025 secs
-    ## Time difference of 2.550673 secs
-    ## Time difference of 2.690988 secs
-    ## Time difference of 2.793058 secs
+    ## Time difference of 0.745347 secs
+    ## Time difference of 0.8980899 secs
+    ## Time difference of 0.963028 secs
+    ## Time difference of 1.235059 secs
+    ## Time difference of 1.371072 secs
+    ## Time difference of 1.534868 secs
+    ## Time difference of 1.655336 secs
+    ## Time difference of 1.848727 secs
+    ## Time difference of 2.129453 secs
+    ## Time difference of 2.104751 secs
+    ## Time difference of 2.13797 secs
+    ## Time difference of 2.34276 secs
+    ## Time difference of 2.426251 secs
+    ## Time difference of 2.52628 secs
 
 # Plot K-means clustering analysis results
 
@@ -229,17 +229,18 @@ print(pp2)
 #Plot the distribution of burden for each OS subtype in each cluster
 c1 <- clindat_all
 c1$cluster <- as.character(as.numeric(k7$cluster))
-c1$group <- c("{1,2}","{3}")[as.numeric(k7$cluster==3)+1]
-dist_mat = melt(subset(c1, select = c("CB","FB","GC","HN","OB","VR","cluster")))
+c1$group <- c("{cluster 1,2}","{cluster 3}")[as.numeric(k7$cluster==3)+1]
+colnames(c1)[colnames(c1) == "HN"] = "N"
+dist_mat = melt(subset(c1, select = c("CB","FB","GC","N","OB","VR","cluster")))
 ```
 
-    ## Warning in melt(subset(c1, select = c("CB", "FB", "GC", "HN", "OB", "VR", :
+    ## Warning in melt(subset(c1, select = c("CB", "FB", "GC", "N", "OB", "VR", :
     ## The melt generic in data.table has been passed a data.frame and will attempt
     ## to redirect to the relevant reshape2 method; please note that reshape2 is
     ## deprecated, and this redirection is now deprecated as well. To continue using
     ## melt methods from reshape2 while both libraries are attached, e.g. melt.list,
     ## you can prepend the namespace like reshape2::melt(subset(c1, select = c("CB",
-    ## "FB", "GC", "HN", "OB", "VR", "cluster"))). In the next version, this warning
+    ## "FB", "GC", "N", "OB", "VR", "cluster"))). In the next version, this warning
     ## will become an error.
 
     ## Using cluster as id variables
@@ -254,7 +255,7 @@ bxp <- ggplot(
 p5 <- bxp + stat_pvalue_manual(
   stat.test,  label = "{p.signif}", 
   tip.length = 0, hide.ns = TRUE
-  ) +  ylab("Burden") + xlab("subtype") + theme_classic()
+  ) +  ylab("Burden") + xlab("variant") + theme_classic()
 print(ggarrange(p5, labels = "", nrow = 1, ncol = 1))
 ```
 
@@ -348,7 +349,7 @@ print(summary(fit))
     ## genderF                0.008108  1.008141 0.145065 0.056   0.9554  
     ## weight                 0.190703  1.210099 0.075237 2.535   0.0113 *
     ## treatmentSirolimus+SOC 0.010477  1.010532 0.139024 0.075   0.9399  
-    ## group{3}               0.628359  1.874531 0.420995 1.493   0.1356  
+    ## group{cluster 3}       0.628359  1.874531 0.420995 1.493   0.1356  
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
@@ -359,7 +360,7 @@ print(summary(fit))
     ## genderF                    1.008     0.9919    0.7587     1.340
     ## weight                     1.210     0.8264    1.0442     1.402
     ## treatmentSirolimus+SOC     1.011     0.9896    0.7695     1.327
-    ## group{3}                   1.875     0.5335    0.8214     4.278
+    ## group{cluster 3}           1.875     0.5335    0.8214     4.278
     ## 
     ## Concordance= 0.577  (se = 0.021 )
     ## Likelihood ratio test= 14.43  on 7 df,   p=0.04
@@ -404,7 +405,7 @@ print(summary(fit))
     ## genderF                -0.01395   0.98615  0.13858 -0.101   0.9198    
     ## weight                  0.28821   1.33403  0.06958  4.142 3.44e-05 ***
     ## treatmentSirolimus+SOC  0.06110   1.06301  0.13141  0.465   0.6419    
-    ## group{3}                0.83001   2.29334  0.39203  2.117   0.0342 *  
+    ## group{cluster 3}        0.83001   2.29334  0.39203  2.117   0.0342 *  
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
@@ -415,7 +416,7 @@ print(summary(fit))
     ## genderF                   0.9862     1.0140    0.7516     1.294
     ## weight                    1.3340     0.7496    1.1640     1.529
     ## treatmentSirolimus+SOC    1.0630     0.9407    0.8216     1.375
-    ## group{3}                  2.2933     0.4360    1.0636     4.945
+    ## group{cluster 3}          2.2933     0.4360    1.0636     4.945
     ## 
     ## Concordance= 0.586  (se = 0.021 )
     ## Likelihood ratio test= 23.12  on 7 df,   p=0.002
