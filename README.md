@@ -3,7 +3,9 @@ Osteosarcomas are aggressive tumors of the bone with many divergent histologies.
 ![](schematic_adversarial.png)
 
 ## Requirements
-python>=3.6
-openslide
-pytorch>=1.1
-torchvision
+<ul>
+  <li> python>=3.6 </li>
+  <li> openslide </li>
+  <li> pytorch==1.9+cu111 </li>
+  <li> torchvision==0.10.0+cu111 </li>
+</ul>
