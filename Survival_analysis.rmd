@@ -262,7 +262,7 @@ print(p4)
 ```{r}
 #by annotations
 c1 <- clindat_all
-c1$group <- c("{1,2}","{3}")[as.numeric(k7$cluster==3)+1]
+c1$group <- c("{cluster 1,2}","{cluster 3}")[as.numeric(k7$cluster==3)+1]
 c1 = c1[c1$annotated,]
 surv <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)
 diff <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)
@@ -306,7 +306,7 @@ print(fig2)
 a1 <- ggarrange(fig1,fig2, labels = c("A","B"), nrow = 1, ncol = 2)
 
 c1 <- clindat_all
-c1$group <- c("{1,2}","{3}")[as.numeric(k7$cluster==3)+1]
+c1$group <- c("{cluster 1,2}","{cluster 3}")[as.numeric(k7$cluster==3)+1]
 c1 = c1[!c1$annotated,]
 surv <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)
 diff <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)

@@ -179,20 +179,20 @@ avg_sil_values <- t(sapply(k.values, function(k) {
 }))
 ```
 
-    ## Time difference of 0.745347 secs
-    ## Time difference of 0.8980899 secs
-    ## Time difference of 0.963028 secs
-    ## Time difference of 1.235059 secs
-    ## Time difference of 1.371072 secs
-    ## Time difference of 1.534868 secs
-    ## Time difference of 1.655336 secs
-    ## Time difference of 1.848727 secs
-    ## Time difference of 2.129453 secs
-    ## Time difference of 2.104751 secs
-    ## Time difference of 2.13797 secs
-    ## Time difference of 2.34276 secs
-    ## Time difference of 2.426251 secs
-    ## Time difference of 2.52628 secs
+    ## Time difference of 0.740078 secs
+    ## Time difference of 0.821826 secs
+    ## Time difference of 0.9210508 secs
+    ## Time difference of 1.140826 secs
+    ## Time difference of 1.271089 secs
+    ## Time difference of 1.384421 secs
+    ## Time difference of 1.527668 secs
+    ## Time difference of 1.734425 secs
+    ## Time difference of 2.006827 secs
+    ## Time difference of 2.101489 secs
+    ## Time difference of 2.295859 secs
+    ## Time difference of 2.307146 secs
+    ## Time difference of 2.394569 secs
+    ## Time difference of 2.53741 secs
 
 # Plot K-means clustering analysis results
 
@@ -441,7 +441,7 @@ print(p4)
 ``` r
 #by annotations
 c1 <- clindat_all
-c1$group <- c("{1,2}","{3}")[as.numeric(k7$cluster==3)+1]
+c1$group <- c("{cluster 1,2}","{cluster 3}")[as.numeric(k7$cluster==3)+1]
 c1 = c1[c1$annotated,]
 surv <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)
 diff <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)
@@ -494,7 +494,7 @@ print(fig2)
 a1 <- ggarrange(fig1,fig2, labels = c("A","B"), nrow = 1, ncol = 2)
 
 c1 <- clindat_all
-c1$group <- c("{1,2}","{3}")[as.numeric(k7$cluster==3)+1]
+c1$group <- c("{cluster 1,2}","{cluster 3}")[as.numeric(k7$cluster==3)+1]
 c1 = c1[!c1$annotated,]
 surv <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)
 diff <- survfit(Surv(OS_time, OS_status) ~ group, data = c1)
