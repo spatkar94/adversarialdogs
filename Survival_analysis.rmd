@@ -30,10 +30,10 @@ library(matrixStats)
 #Scripts to read in the canine OS clinical metadata
 
 #clinical metadata for all cases that received Rapamycin (mTOR inhibitor) in addition to standard of care therapy
-Slides2Outcomes_Rapa_all <- read_csv("~/Dog/Slides2Outcomes_Rapa_all_new.csv")
+Slides2Outcomes_Rapa_all <- read_csv("Slides2Outcomes_Rapa_all_new.csv")
 
 #clinical metadata for all cases that received standard of care therapy
-Slides2Outcomes_SOC_all <- read_csv("~/Dog/Slides2Outcomes_SOC_all_new.csv")
+Slides2Outcomes_SOC_all <- read_csv("Slides2Outcomes_SOC_all_new.csv")
 
 dat1 <- subset(Slides2Outcomes_Rapa_all,select = c("slide","Patient ID","Tumor Location","Site","age","weight","breed","gender","PH","ALP","Group","DFI","DFI_censor","Survival (days from sx)","Surv_censor"))
 dat1$treatment = rep("Rapamycin", nrow(dat1))
@@ -51,13 +51,12 @@ clindat_all$ALP[clindat_all$ALP == "elevated"] <- "Elevated"
 
 
 #read in estimated burden for each histological subtype (determined by AI predictions)
-dog_slide_level_features <- read.csv("~/Downloads/dog_slide_level_features.csv")
+dog_slide_level_features <- read.csv("dog_slide_level_features.csv")
 rownames(dog_slide_level_features) <- dog_slide_level_features$slide
 dog_slide_level_features <- dog_slide_level_features[,-1]
 
 #slides previously annotated by pathologist and used to train and validate AI classifier
-ann_slides = union(list.files('~/Dog/annotations/',pattern = "*.xml"), union(list.files('~/Dog/annotations_new/',pattern = "*.xml"),list.files('~/Dog/annotations_19012022/',pattern = '*.xml')))
-ann_slides1 = sapply(ann_slides, function(x) gsub('\\.xml','',x))
+ann_slides = read_csv("annotated_slides.csv")$slides
 
 
 #collect histological data for all cases with matched clinical metadata
@@ -350,5 +349,5 @@ print(fig2)
 a2 <- ggarrange(fig1,fig2, labels = c("C","D"), nrow = 1, ncol = 2)
 
 sfig2 <- ggarrange(a1,a2, labels = c("",""), nrow = 2, ncol = 1)
-ggsave(sfig2, filename = "~/Dog/SuppFig2.pdf", width = 12, height = 12)
+ggsave(sfig2, filename = "SuppFig2.pdf", width = 12, height = 12)
 ```
