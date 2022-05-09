@@ -7,8 +7,11 @@ import pandas as pd
 import cv2
 from scipy import ndimage
 from skimage import morphology
+import argparse
 
 if __name__ == "__main__":
+	parser = argparse.ArgumentParser()
+	parser.add_argument(
 	features = {}
 	imgs = sorted(glob.glob('/data/spatkar/slide_probs_dog/*_lowres.tiff'))
 	print(imgs[:10])
