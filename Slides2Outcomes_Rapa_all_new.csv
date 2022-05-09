@@ -1,0 +1,296 @@
+,Study,Patient ID,Site,Name,age,weight,breed,gender,Tumor Location,PH vs NPH,PH,ALP,Group,DFI,DFI_censor,Survival (days from sx),Surv_censor,sample,Collection time point,"(Tumor/normal/met, unknown)",Sample Location,slide,Halo Box Folder
+0,Rapa,101,UT,Bailey,8.4,42.3,Labrador Retriever,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,91,1,154,1,0101 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 15.56.03.ndpi,Box 9
+1,Rapa,101,UT,Bailey,8.4,42.3,Labrador Retriever,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,91,1,154,1,0101 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 16.13.02.ndpi,Box 9
+2,Rapa,103,UT,Crockett,6.8,40.4,Bernese Mountain Dog,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,210,1,223,1,0103 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-08 17.16.19.ndpi,Box 2
+3,Rapa,105,UT,Dakota,9.9,31.5,Labrador Retriever,Castrated male,Right proximal humerus,PH,1,Normal,PHNALP,157,1,157,1,0105 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 17.35.59.ndpi,DOG2 Batch 2
+4,Rapa,105,UT,Dakota,9.9,31.5,Labrador Retriever,Castrated male,Right proximal humerus,PH,1,Normal,PHNALP,157,1,157,1,0105 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 17.38.19.ndpi,DOG2 Batch 2
+5,Rapa,201,CSU,Griffon,8.9,40.6,Labrador Retriever,Castrated Male,Right proximal humerus ,PH,1,Normal,PHNALP,103,1,476,1,0201 Tumor  A,Surgery,Tumor,Primary Tumor,2021-04-23 14.09.26.ndpi,DOG2 original
+6,Rapa,201,CSU,Griffon,8.9,40.6,Labrador Retriever,Castrated Male,Right proximal humerus ,PH,1,Normal,PHNALP,103,1,476,1,0201 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 14.16.35.ndpi,DOG2 original
+7,Rapa,203,CSU,Riley,7.5,41.8,Golden Retriever,Castrated Male,Right distal radius,NPH,0,Normal,NPHNALP,297,1,373,1, 0203 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 13.56.04.ndpi,DOG2 original
+8,Rapa,203,CSU,Riley,7.5,41.8,Golden Retriever,Castrated Male,Right distal radius,NPH,0,Normal,NPHNALP,297,1,373,1,0203Tumor B,Surgery,Tumor,Primary Tumor,2021-12-02 16.36.51.ndpi,DOG2 Batch 2
+9,Rapa,205,CSU,Diesel,10.3,28.7,Mixed Breed,Castrated Male,Right distal femur,NPH,0,Elevated,NPHEALP,244,1,439,1,0205 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 16.59.04.ndpi,Box 9
+10,Rapa,205,CSU,Diesel,10.3,28.7,Mixed Breed,Castrated Male,Right distal femur,NPH,0,Elevated,NPHEALP,244,1,439,1,0205 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 17.04.58.ndpi,Box 9
+11,Rapa,207,CSU,Casey,6.2,38.6,Golden Retriever,Castrated Male,Right distal femur,NPH,0,Normal,NPHNALP,1091,1,1091,1,0207 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 13.45.47.ndpi,DOG2 original
+12,Rapa,207,CSU,Casey,6.2,38.6,Golden Retriever,Castrated Male,Right distal femur,NPH,0,Normal,NPHNALP,1091,1,1091,1,0207 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 13.50.55.ndpi,DOG2 original
+13,Rapa,209,CSU,Maggie,9.3,44.6,Saint Bernard,Spayed Female,Left distal femur,NPH,0,Normal,NPHNALP,60,1,60,1,0209 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 13.36.59.ndpi,DOG2 original
+14,Rapa,209,CSU,Maggie,9.3,44.6,Saint Bernard,Spayed Female,Left distal femur,NPH,0,Normal,NPHNALP,60,1,60,1,0209 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-02 16.29.40.ndpi,DOG2 Batch 2
+15,Rapa,211,CSU,Kingsley,8.1,53.7,Great Dane,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,107,0,223,0,0211 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 18.20.23.ndpi,DOG2 Batch 2
+16,Rapa,211,CSU,Kingsley,8.1,53.7,Great Dane,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,107,0,223,0,0211 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 18.24.11.ndpi,DOG2 Batch 2
+17,Rapa,213,CSU,Wrigley,10.4,39.4,Belgian Malinois,Castrated male,Right Proximal humerus,PH,1,Normal,PHNALP,223,1,257,1,0213 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 13.18.02.ndpi,DOG2 original
+18,Rapa,213,CSU,Wrigley,10.4,39.4,Belgian Malinois,Castrated male,Right Proximal humerus,PH,1,Normal,PHNALP,223,1,257,1,0213 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 13.23.44.ndpi,DOG2 original
+19,Rapa,215,CSU,Riley Mae,7.1,30,Labrador Retriever,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,160,1,161,1,0215 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 13.06.10.ndpi,DOG2 original
+20,Rapa,215,CSU,Riley Mae,7.1,30,Labrador Retriever,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,160,1,161,1,0215 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 13.09.37.ndpi,DOG2 original
+21,Rapa,217,CSU/IL,Bubba,4.7,53.2,Other,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,154,1,190,1,0217 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 17.33.02.ndpi,Box 9
+22,Rapa,217,CSU/IL,Bubba,4.7,53.2,Other,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,154,1,190,1,0217 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 17.42.24.ndpi,Box 9
+23,Rapa,219,CSU,Tulsa,4.6,46,Labrador Retriever,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,78,1,248,1,0219 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-08 17.24.17.ndpi,Box 2
+24,Rapa,219,CSU,Tulsa,4.6,46,Labrador Retriever,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,78,1,248,1,0219 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 18.08.25.ndpi,Box 9
+25,Rapa,226,CSU,Butterball,7,31,Greyhound,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,109,1,187,1,0226 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 18.49.53.ndpi,DOG2 Batch 2
+26,Rapa,226,CSU,Butterball,7,31,Greyhound,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,109,1,187,1,0226 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 18.52.16.ndpi,DOG2 Batch 2
+27,Rapa,301,MU,Bochephus,7.1,46.7,Rottweiler,Castrated male,Left proximal femur,NPH,0,Normal,NPHNALP,479,1,634,1,0301 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 19.02.40.ndpi,DOG2 Batch 2
+28,Rapa,301,MU,Bochephus,7.1,46.7,Rottweiler,Castrated male,Left proximal femur,NPH,0,Normal,NPHNALP,479,1,634,1,0301 Tumor B ,Surgery,Tumor,Primary Tumor,2021-12-08 17.40.58.ndpi,Box 2
+29,Rapa,303,MU,Blue,7.8,55.7,Great Dane,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,43,0,1351,0,0303 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 19.08.17.ndpi,DOG2 Batch 2
+30,Rapa,303,MU,Blue,7.8,55.7,Great Dane,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,43,0,1351,0,0303 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 19.11.14.ndpi,DOG2 Batch 2
+31,Rapa,305,MU,Beam,1.9,54.3,Mixed Breed,Male Phenotype (neutered during amp),Left distal tibia,NPH,0,Normal,NPHNALP,55,1,102,0,0305 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 12.29.59.ndpi,DOG2 original
+32,Rapa,305,MU,Beam,1.9,54.3,Mixed Breed,Male Phenotype (neutered during amp),Left distal tibia,NPH,0,Normal,NPHNALP,55,1,102,0,0305 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 16.21.22.ndpi,DOG2 Batch 2
+33,Rapa,307,MU,Rosie,11.1,25.6,Golden Retriever,,Left distal femur,NPH,0,Normal,NPHNALP,198,0,198,0,0307 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 19.27.19.ndpi,DOG2 Batch 2
+34,Rapa,307,MU,Rosie,11.1,25.6,Golden Retriever,,Left distal femur,NPH,0,Normal,NPHNALP,198,0,198,0,0307 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 19.34.36.ndpi,DOG2 Batch 2
+35,Rapa,309,MU,Herc,7.2,40.5,Mixed Breed,Castrated male,Left proximal tibia,NPH,0,Normal,NPHNALP,62,1,144,1,0309 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 12.11.01.ndpi,DOG2 original
+36,Rapa,309,MU,Herc,7.2,40.5,Mixed Breed,Castrated male,Left proximal tibia,NPH,0,Normal,NPHNALP,62,1,144,1,0309 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 16.12.43.ndpi,DOG2 Batch 2
+37,Rapa,311,MU,Grace,4.3,33.1,Catahoula hound,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,1092,0,1652,0,0311 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 19.42.04.ndpi,DOG2 Batch 2
+38,Rapa,311,MU,Grace,4.3,33.1,Catahoula hound,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,1092,0,1652,0,0311 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 19.48.10.ndpi,DOG2 Batch 2
+39,Rapa,313,MU,Guinness,5.4,57.9,Irish Wolfhound,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,93,1,154,1,0313 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 18.42.03.ndpi,Box 9
+40,Rapa,313,MU,Guinness,5.4,57.9,Irish Wolfhound,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,93,1,154,1,0313 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 19.02.17.ndpi,Box 9
+41,Rapa,314,MU,Daisy,7.5,34,Mixed Breed,Spayed female,Left diaphyseal ulna,NPH,0,Normal,NPHNALP,986,0,1110,0,0314 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 19.55.42.ndpi,DOG2 Batch 2
+42,Rapa,314,MU,Daisy,7.5,34,Mixed Breed,Spayed female,Left diaphyseal ulna,NPH,0,Normal,NPHNALP,986,0,1110,0,0314 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 20.04.06.ndpi,DOG2 Batch 2
+43,Rapa,315,MU,Barley,6.1,42.7,Mixed Breed,Castrated male,Left proximal tibia,NPH,0,Normal,NPHNALP,538,1,578,1,0315 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 19.21.15.ndpi,Box 9
+44,Rapa,315,MU,Barley,6.1,42.7,Mixed Breed,Castrated male,Left proximal tibia,NPH,0,Normal,NPHNALP,538,1,578,1,0315 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 19.27.35.ndpi,Box 9
+45,Rapa,315,MU,Barley,6.1,42.7,Mixed Breed,Castrated male,Left proximal tibia,NPH,0,Normal,NPHNALP,538,1,578,1,0315 Tumor C,Surgery,Tumor,Primary Tumor,2022-01-10 19.37.00.ndpi,Box 9
+46,Rapa,317,MU,Sadie,5.1,34.6,Doberman Pinscher,Castrated male,Right distal radius,NPH,0,Elevated,NPHEALP,104,0,116,0,0317 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 20.09.48.ndpi,DOG2 Batch 2
+47,Rapa,317,MU,Sadie,5.1,34.6,Doberman Pinscher,Castrated male,Right distal radius,NPH,0,Elevated,NPHEALP,104,0,116,0,0317 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 20.13.20.ndpi,DOG2 Batch 2
+48,Rapa,319,MU,Roxie,9.2,47.1,Great Dane,Spayed Female,Left proximal humerus,PH,1,Normal,PHNALP,82,0,215,0,0319 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 20.08.05.ndpi,Box 9
+49,Rapa,319,MU,Roxie,9.2,47.1,Great Dane,Spayed Female,Left proximal humerus,PH,1,Normal,PHNALP,82,0,215,0,0319 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 20.18.22.ndpi,Box 9
+50,Rapa,321,MU,Brinks,10.1,60.6,Great Pyrenees,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,11,0,11,0,0321 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 20.21.19.ndpi,DOG2 Batch 2
+51,Rapa,321,MU,Brinks,10.1,60.6,Great Pyrenees,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,11,0,11,0,0321 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 20.29.03.ndpi,DOG2 Batch 2
+52,Rapa,323,MU,Ruby,10.1,36.3,Mixed Breed,Spayed female,Right proximal humerus,PH,1,Normal,PHNALP,137,1,137,1,0323 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 17.57.14.ndpi,Box 2
+53,Rapa,323,MU,Ruby,10.1,36.3,Mixed Breed,Spayed female,Right proximal humerus,PH,1,Normal,PHNALP,137,1,137,1,0323 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 18.51.45.ndpi,Box 9
+54,Rapa,325,MU,Luke,11.3,37.6,Labrador Retriever,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,325,1,554,1,0325 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 20.37.15.ndpi,Box 9
+55,Rapa,325,MU,Luke,11.3,37.6,Labrador Retriever,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,325,1,554,1,0325 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 20.52.18.ndpi,Box 9
+56,Rapa,327,MU,Stanley,8,47.4,Rottweiler,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,223,1,257,1,0327 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 11.19.33.ndpi,DOG2 original
+57,Rapa,327,MU,Stanley,8,47.4,Rottweiler,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,223,1,257,1,0327 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 11.28.07.ndpi,DOG2 original
+58,Rapa,329,MU,Mable,10.3,40.7,Alaskan Malamute,Spayed female,Left distal radius,NPH,0,Elevated,NPHEALP,359,0,359,0,0329 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 20.34.27.ndpi,DOG2 Batch 2
+59,Rapa,329,MU,Mable,10.3,40.7,Alaskan Malamute,Spayed female,Left distal radius,NPH,0,Elevated,NPHEALP,359,0,359,0,0329 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 20.39.32.ndpi,DOG2 Batch 2
+60,Rapa,335,MU,Walter,8.6,47.3,Mixed Breed,Castrated Male,Left distal tibia,NPH,0,Normal,NPHNALP,55,1,139,1,0335 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 11.12.26.ndpi,DOG2 original
+61,Rapa,335,MU,Walter,8.6,47.3,Mixed Breed,Castrated Male,Left distal tibia,NPH,0,Normal,NPHNALP,55,1,139,1,0335 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 11.14.35.ndpi,DOG2 original
+62,Rapa,405,Penn,Gracie,7.2,52.3,Saint Bernard,Spayed female,Left distal tibia,NPH,0,Normal,NPHNALP,157,1,167,1,0405 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 21.36.32.ndpi,DOG2 Batch 2
+63,Rapa,405,Penn,Gracie,7.2,52.3,Saint Bernard,Spayed female,Left distal tibia,NPH,0,Normal,NPHNALP,157,1,167,1,0405 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 21.42.55.ndpi,DOG2 Batch 2
+64,Rapa,407,Penn,Ruth,11.1,,Bulldog,Spayed female,Left proximal humerus,PH,1,Elevated,PHEALP,33,1,33,1,0407 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 10.59.46.ndpi,DOG2 original
+65,Rapa,407,Penn,Ruth,11.1,,Bulldog,Spayed female,Left proximal humerus,PH,1,Elevated,PHEALP,33,1,33,1,0407 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-24 09.53.43.ndpi,DOG2 original
+66,Rapa,501,UW,Riley,6,27.8,Mixed Breed,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,1106,0,1566,0,0501 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 22.20.35.ndpi,Box 9
+67,Rapa,501,UW,Riley,6,27.8,Mixed Breed,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,1106,0,1566,0,0501 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 11.57.00.ndpi,Box 9
+68,Rapa,503,UW,Pogo,8,38.4,Greyhound,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,168,1,229,1,0503 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 13.54.17.ndpi,DOG2 Batch 2
+69,Rapa,503,UW,Pogo,8,38.4,Greyhound,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,168,1,229,1,0503 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 16.21.10.ndpi,DOG2 Batch 2
+70,Rapa,505,UW,Leia,9.8,43.8,Mixed Breed,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,225,1,261,1,0505 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 14.25.16.ndpi,DOG2 Batch 2
+71,Rapa,507,UW,Chuck,7.2,68,Leonberger,Male Phenotype,Left distal femur,NPH,0,Normal,NPHNALP,97,1,105,1, 0507 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 14.35.04.ndpi,DOG2 Batch 2
+72,Rapa,507,UW,Chuck,7.2,68,Leonberger,Male Phenotype,Left distal femur,NPH,0,Normal,NPHNALP,97,1,105,1, 0507 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 16.24.17.ndpi,DOG2 Batch 2
+73,Rapa,509,UW,Luca,5,57,Labrador Retriever,Castrated male,Left distal radius,NPH,0,normal,NPHNALP,240,1,255,1, 0509 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 13.15.09.ndpi,DOG2 Batch 2
+74,Rapa,509,UW,Luca,5,57,Labrador Retriever,Castrated male,Left distal radius,NPH,0,normal,NPHNALP,240,1,255,1, 0509 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 16.26.36.ndpi,DOG2 Batch 2
+75,Rapa,511,UW,Roxy,5.9,53.8,Rottweiler,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,210,1,753,0, 0511 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 13.47.24.ndpi,DOG2 Batch 2
+76,Rapa,511,UW,Roxy,5.9,53.8,Rottweiler,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,210,1,753,0, 0511 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 16.29.43.ndpi,DOG2 Batch 2
+77,Rapa,513,UW,Sadie,8.9,41.7,Labrador Retriever,Spayed female,Right proximal humerus,PH,1,Elevated,PHEALP,160,1,160,1,0513 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 10.40.29.ndpi,DOG2 Batch 2
+78,Rapa,513,UW,Sadie,8.9,41.7,Labrador Retriever,Spayed female,Right proximal humerus,PH,1,Elevated,PHEALP,160,1,160,1,0513 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-02 10.44.45.ndpi,DOG2 Batch 2
+79,Rapa,515,UW,Mick,6,71.4,Irish Wolfhound,Male Phenotype,Right distal radius,NPH,0,Normal,NPHNALP,57,1,657,0,0515 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 22.54.20.ndpi,DOG2 Batch 2
+80,Rapa,517,UW,Max,5,49.5,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,99,1,154,1,0517 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 23.07.14.ndpi,DOG2 Batch 2
+81,Rapa,517,UW,Max,5,49.5,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,99,1,154,1,0517 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 23.10.09.ndpi,DOG2 Batch 2
+82,Rapa,519,UW,Harley,8.3,27.7,German Shorthaired Pointer,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,211,1,303,0,0519 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 23.20.04.ndpi,DOG2 Batch 2
+83,Rapa,519,UW,Harley,8.3,27.7,German Shorthaired Pointer,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,211,1,303,0,0519 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 23.24.56.ndpi,DOG2 Batch 2
+84,Rapa,520,UW,Cyrus,2.8,51.2,Mixed Breed,Castrated male,Right proximal tibia,NPH,0,Normal,NPHNALP,410,1,478,0,0520 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 23.14.17.ndpi,Box 9
+85,Rapa,520,UW,Cyrus,2.8,51.2,Mixed Breed,Castrated male,Right proximal tibia,NPH,0,Normal,NPHNALP,410,1,478,0,0520Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 23.21.35.ndpi,Box 9
+86,Rapa,523,UW,Hank,6.4,43.5,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,163,1,179,1, 0523 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 23.35.58.ndpi,DOG2 Batch 2
+87,Rapa,524,UW,Wyeth,7.8,39,Mixed Breed,Castrated male,Right mid-diaphyseal radius,NPH,0,Normal,NPHNALP,101,0,450,0, 0524 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 09.27.58.ndpi,DOG2 Batch 2
+88,Rapa,524,UW,Wyeth,7.8,39,Mixed Breed,Castrated male,Right mid-diaphyseal radius,NPH,0,Normal,NPHNALP,101,0,450,0, 0524 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 09.33.39.ndpi,DOG2 Batch 2
+89,Rapa,525,UW,Izzy,11,21.1,Border Collie,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,818,1,818,1,0525 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 10.22.14.ndpi,DOG2 Batch 2
+90,Rapa,525,UW,Izzy,11,21.1,Border Collie,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,818,1,818,1,0525 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-10 00.36.19.ndpi,Box 4
+91,Rapa,601,OSU,Arlo,8,56,Saint Bernard,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,648,0,648,0, 0601 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 09.42.40.ndpi,DOG2 Batch 2
+92,Rapa,601,OSU,Arlo,8,56,Saint Bernard,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,648,0,648,0,0601 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 18.40.42.ndpi,Box 2
+93,Rapa,603,OSU,Roman,9,40,Mixed Breed,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,217,1,303,1,0603 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-02 11.23.20.ndpi,DOG2 Batch 2
+94,Rapa,603,OSU,Roman,9,40,Mixed Breed,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,217,1,303,1,0603 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 14.04.11.ndpi,DOG2 Batch 2
+95,Rapa,605,OSU,Ruby,9.2,36.5,Irish Setter,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,56,1,92,1,0605 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 23.33.25.ndpi,Box 9
+96,Rapa,607,OSU,Petey,8,26.6,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,101,1,233,1, 0607 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 09.53.54.ndpi,DOG2 Batch 2
+97,Rapa,607,OSU,Petey,8,26.6,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,101,1,233,1, 0607 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 09.59.02.ndpi,DOG2 Batch 2
+98,Rapa,609,OSU,Boomerang,6.5,28.2,Mixed Breed,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,829,1,830,1, 0609 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-10 23.39.18.ndpi,Box 9
+99,Rapa,609,OSU,Boomerang,6.5,28.2,Mixed Breed,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,829,1,830,1, 0609 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-10 23.46.03.ndpi,Box 9
+100,Rapa,621,OSU,Norman,5.7,37.6,Golden Retriever,Castrated male,Left proximal humerus,PH,1,Normal,PHNALP,56,1,234,1,0621 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 19.54.02.ndpi,DOG2 original
+101,Rapa,621,OSU,Norman,5.7,37.6,Golden Retriever,Castrated male,Left proximal humerus,PH,1,Normal,PHNALP,56,1,234,1,0621 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 19.59.40.ndpi,DOG2 original
+102,Rapa,625,OSU,keela,2.4,27,Doberman Pinscher,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,991,0,1046,0,0625 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 10.30.37.ndpi,DOG2 Batch 2
+103,Rapa,625,OSU,keela,2.4,27,Doberman Pinscher,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,991,0,1046,0,0625 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 10.34.22.ndpi,DOG2 Batch 2
+104,Rapa,629,OSU,Sammy,13,33.6,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,150,1,379,1,0629 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 19.05.20.ndpi,Box 2
+105,Rapa,629,OSU,Sammy,13,33.6,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,150,1,379,1,0629 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 01.34.44.ndpi,Box 9
+106,Rapa,630,OSU,Princess,10,30.8,Greyhound,Spayed female,Right proximal humerus,PH,1,Normal,PHNALP,150,1,268,1,0630 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 10.38.03.ndpi,DOG2 Batch 2
+107,Rapa,630,OSU,Princess,10,30.8,Greyhound,Spayed female,Right proximal humerus,PH,1,Normal,PHNALP,150,1,268,1,0630 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 10.41.49.ndpi,DOG2 Batch 2
+108,Rapa,631,OSU,Diablo,10.2,38,Mixed Breed,Castrated male,Right distal femur,NPH,0,Elevated,NPHEALP,56,1,94,1,0631 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 20.16.14.ndpi,DOG2 original
+109,Rapa,631,OSU,Diablo,10.2,38,Mixed Breed,Castrated male,Right distal femur,NPH,0,Elevated,NPHEALP,56,1,94,1,0631 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 20.21.38.ndpi,DOG2 original
+110,Rapa,637,OSU,Keira,10,29.6,Mixed Breed,Spayed female,left proximal humerus,PH,1,Elevated,PHEALP,157,1,252,1,0637 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 02.03.36.ndpi,Box 9
+111,Rapa,637,OSU,Keira,10,29.6,Mixed Breed,Spayed female,left proximal humerus,PH,1,Elevated,PHEALP,157,1,252,1,0637 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 02.11.59.ndpi,Box 9
+112,Rapa,638,OSU,Fritz,4.6,44.8,Mixed Breed,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,414,1,993,0,0638 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 02.24.57.ndpi,Box 9
+113,Rapa,638,OSU,Fritz,4.6,44.8,Mixed Breed,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,414,1,993,0,0638 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 13.24.15.ndpi,Box 9
+114,Rapa,640,OSU,Nik,8.9,30.6,Boxer,Castrated male,Right distal femur,NPH,0,Elevated,NPHEALP,63,1,63,1,0640 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 20.47.02.ndpi,DOG2 original
+115,Rapa,640,OSU,Nik,8.9,30.6,Boxer,Castrated male,Right distal femur,NPH,0,Elevated,NPHEALP,63,1,63,1,0640 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 20.52.25.ndpi,DOG2 original
+116,Rapa,641,OSU,Hanna,11,42,Golden Retriever,Spayed female,Right proximal humerus,PH,1,Normal,PHNALP,220,0,544,1,0641 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 13.32.10.ndpi,Box 9
+117,Rapa,641,OSU,Hanna,11,42,Golden Retriever,Spayed female,Right proximal humerus,PH,1,Normal,PHNALP,220,0,544,1,0641 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 13.43.45.ndpi,Box 9
+118,Rapa,643,OSU,Ando,8,30.4,Siberian Husky,Castrated male,Left proximal humerus,PH,1,Normal,PHNALP,783,0,1124,0,0643 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 10.56.49.ndpi,DOG2 Batch 2
+119,Rapa,643,OSU,Ando,8,30.4,Siberian Husky,Castrated male,Left proximal humerus,PH,1,Normal,PHNALP,783,0,1124,0, 0643 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 11.00.08.ndpi,DOG2 Batch 2
+120,Rapa,701,UIL,Ginny,10,25.5,Irish Setter,Spayed female,Right distal femur,NPH,0,Normal,NPHNALP,204,1,232,1, 0701 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 11.03.42.ndpi,DOG2 Batch 2
+121,Rapa,701,UIL,Ginny,10,25.5,Irish Setter,Spayed female,Right distal femur,NPH,0,Normal,NPHNALP,204,1,232,1,0701 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 11.15.18.ndpi,DOG2 Batch 2
+122,Rapa,703,UIL,Lexi,7,32.5,Boxer,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,434,1,456,1,0703 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 11.52.08.ndpi,DOG2 Batch 2
+123,Rapa,703,UIL,Lexi,7,32.5,Boxer,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,434,1,456,1, 0703 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 12.10.59.ndpi,DOG2 Batch 2
+124,Rapa,705,UIL,Vanna,6,27.2,Afghan Hound,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,134,1,134,1,0705 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 11.11.29.ndpi,DOG2 Batch 2
+125,Rapa,705,UIL,Vanna,6,27.2,Afghan Hound,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,134,1,134,1,0705 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-10 00.49.31.ndpi,Box 4
+126,Rapa,707,UIL,Charli,7,31.2,Greyhound,Spayed female,Left distal femur,NPH,0,Normal,NPHNALP,176,1,212,1,0707 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 13.53.49.ndpi,Box 9
+127,Rapa,707,UIL,Charli,7,31.2,Greyhound,Spayed female,Left distal femur,NPH,0,Normal,NPHNALP,176,1,212,1,0707 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 14.10.04.ndpi,Box 9
+128,Rapa,709,UIL,Trixie,11,32.8,Golden Retriever,Spayed female,Left distal ulna ,NPH,0,Elevated,NPHEALP,322,1,332,1, 0709 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 12.21.20.ndpi,DOG2 Batch 2
+129,Rapa,709,UIL,Trixie,11,32.8,Golden Retriever,Spayed female,Left distal ulna ,NPH,0,Elevated,NPHEALP,322,1,332,1,709 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 19.36.05.ndpi,Box 2
+130,Rapa,711,IL,Chelsea,11,25,Australian Shepherd,Spayed female,Left proximal humerus,PH,1,Elevated,PHEALP,265,1,459,1, 0711Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 14.38.12.ndpi,Box 9
+131,Rapa,711,IL,Chelsea,11,25,Australian Shepherd,Spayed female,Left proximal humerus,PH,1,Elevated,PHEALP,265,1,459,1,0711 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 14.51.40.ndpi,Box 9
+132,Rapa,713,IL,Bracey,5,25,Golden Retriever,Spayed female,Left distal femur,NPH,0,Elevated,NPHEALP,214,1,253,1,0713 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 13.04.51.ndpi,DOG2 Batch 2
+133,Rapa,713,IL,Bracey,5,25,Golden Retriever,Spayed female,Left distal femur,NPH,0,Elevated,NPHEALP,214,1,253,1, 0713 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 13.12.43.ndpi,DOG2 Batch 2
+134,Rapa,715,IL,Trooper,11.3,46.9,German Shepherd Dog,Castrated male,Left distal femur,NPH,0,Elevated,NPHEALP,27,0,27,0, 0715 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 13.17.34.ndpi,DOG2 Batch 2
+135,Rapa,715,IL,Trooper,11.3,46.9,German Shepherd Dog,Castrated male,Left distal femur,NPH,0,Elevated,NPHEALP,27,0,27,0, 0715 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 13.33.01.ndpi,DOG2 Batch 2
+136,Rapa,717,IL,Nuk,9.3,33.5,Siberian Husky,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,105,1,148,1,0717 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 13.57.07.ndpi,DOG2 Batch 2
+137,Rapa,717,IL,Nuk,9.3,33.5,Siberian Husky,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,105,1,148,1,0717 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 14.04.40.ndpi,DOG2 Batch 2
+138,Rapa,722,IL,Cash,8.1,51.8,Labrador Retriever,Castrated male,Left proximal tibia,NPH,0,Elevated,NPHEALP,36,1,37,1, 0722 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 14.44.27.ndpi,DOG2 original
+139,Rapa,722,IL,Cash,8.1,51.8,Labrador Retriever,Castrated male,Left proximal tibia,NPH,0,Elevated,NPHEALP,36,1,37,1, 0722 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 14.52.35.ndpi,DOG2 original
+140,Rapa,723,IL,Peaches,8.2,28.1,American Staffordshire Terrier,Spayed female,Left proximal tibia,NPH,0,Elevated,NPHEALP,64,1,188,1, 0723 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 15.00.45.ndpi,DOG2 original
+141,Rapa,723,IL,Peaches,8.2,28.1,American Staffordshire Terrier,Spayed female,Left proximal tibia,NPH,0,Elevated,NPHEALP,64,1,188,1, 0723 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 15.14.52.ndpi,DOG2 original
+142,Rapa,725,IL,Niko,1.5,26.2,Siberian Husky,Male Phenotype,Right proximal tibia (**changed from R prox humerus),PH,1,Normal,PHNALP,56,1,162,1, 0725 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-23 15.26.57.ndpi,DOG2 original
+143,Rapa,725,IL,Niko,1.5,26.2,Siberian Husky,Male Phenotype,Right proximal tibia (**changed from R prox humerus),PH,1,Normal,PHNALP,56,1,162,1, 0725 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 15.21.50.ndpi,DOG2 Batch 2
+144,Rapa,730,IL,Kahlua,9,59.5,Mixed Breed,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,213,0,315,1, 0730 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 16.55.01.ndpi,Box 9
+145,Rapa,730,IL,Kahlua,9,59.5,Mixed Breed,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,213,0,315,1, 0730 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 17.02.50.ndpi,Box 9
+146,Rapa,731,IL,Ray,8,60,Labrador Retriever,Castrated male,Right mid-diaphyseal femur,NPH,0,Elevated,NPHEALP,204,1,204,1,0731 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 11.20.12.ndpi,DOG2 Batch 2
+147,Rapa,731,IL,Ray,8,60,Labrador Retriever,Castrated male,Right mid-diaphyseal femur,NPH,0,Elevated,NPHEALP,204,1,204,1,0731 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 11.20.12.ndpi,DOG2 Batch 2
+148,Rapa,731,IL,Ray,8,60,Labrador Retriever,Castrated male,Right mid-diaphyseal femur,NPH,0,Elevated,NPHEALP,204,1,204,1,0731 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-10 01.25.59.ndpi,Box 4
+149,Rapa,732, IL, Jovi,9.6,30.1,Golden Retriever,Castrated male,Right proximal tibia ,NPH,0,Normal ,NPHNALP,541,0,702,0,0732 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 14.51.37.ndpi,DOG2 Batch 2
+150,Rapa,732, IL, Jovi,9.6,30.1,Golden Retriever,Castrated male,Right proximal tibia ,NPH,0,Normal ,NPHNALP,541,0,702,0, 0732 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 14.58.07.ndpi,DOG2 Batch 2
+151,Rapa,801,Guelph,Holly,7.3,47,Bernese Mountain Dog,Spayed female,Right distal femur,NPH,0,Normal,NPHNALP,48,0,262,1,0801Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 17.08.56.ndpi,Box 9
+152,Rapa,803,Guelph,Highlander,12.1,43.2,Golden Retriever,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,266,1,295,1,0803 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 11.34.57.ndpi,DOG2 Batch 2
+153,Rapa,803,Guelph,Highlander,12.1,43.2,Golden Retriever,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,266,1,295,1,0803 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 16.40.27.ndpi,DOG2 Batch 2
+154,Rapa,805,Guelph,Cody,10.4,42,Boxer,Castrated male,Left proximal humerus,PH,0,Normal,PHNALP,56,1,64,1,0805 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 11.53.42.ndpi,Box23
+155,Rapa,807,Guelph,Rosie,5.3,44,Great Pyrenees,Spayed female,Right distal femur,NPH,0,Normal,NPHNALP,166,1,851,0,807 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 11.55.27.ndpi,Box23
+156,Rapa,807,Guelph,Rosie,5.3,44,Great Pyrenees,Spayed female,Right distal femur,NPH,0,Normal,NPHNALP,166,1,851,0,0807 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 14.11.25.ndpi,Box23
+157,Rapa,809,Guelph,Finnigan,8.6,27.6,Mixed Breed,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,322,1,540,1, 0809 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 16.12.01.ndpi,DOG2 original
+158,Rapa,809,Guelph,Finnigan,8.6,27.6,Mixed Breed,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,322,1,540,1, 0809 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-10 01.48.26.ndpi,Box 4
+159,Rapa,811,Guelph,Bruno,6.5,28.2,Mixed Breed,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,722,1,841,1, 0811 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 16.22.15.ndpi,DOG2 original
+160,Rapa,811,Guelph,Bruno,6.5,28.2,Mixed Breed,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,722,1,841,1,0811 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 19.58.31.ndpi,Box 2
+161,Rapa,813,Guelph,Nash,9.5,35,Mixed Breed,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,73,1,280,1,0813 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 15.29.12.ndpi,DOG2 Batch 2
+162,Rapa,814,Guelph,Fenway,6.8,38.6,German Shepherd Dog,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,687,1,687,1,0814 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-08 20.06.46.ndpi,Box 2
+163,Rapa,815,Guelph,Squirrel,8.7,56,Great Dane,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,20,0,20,0, 0815 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 15.34.48.ndpi,DOG2 Batch 2
+164,Rapa,815,Guelph,Squirrel,8.7,56,Great Dane,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,20,0,20,0, 0815 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 15.39.51.ndpi,DOG2 Batch 2
+165,Rapa,817,Guelph,Medizah,9.8,39.2,Mixed Breed,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,329,1,383,1,0817 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 16.31.48.ndpi,DOG2 original
+166,Rapa,817,Guelph,Medizah,9.8,39.2,Mixed Breed,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,329,1,383,1,0817 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 20.14.33.ndpi,Box 2
+167,Rapa,819,Guelph,Smokey,6.6,30.2,Mixed Breed,Castrated male,Right proximal ulna (olecranon),NPH,0,Normal,NPHNALP,1109,0,1484,0,0819 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-04 15.45.39.ndpi,DOG2 Batch 2
+168,Rapa,819,Guelph,Smokey,6.6,30.2,Mixed Breed,Castrated male,Right proximal ulna (olecranon),NPH,0,Normal,NPHNALP,1109,0,1484,0,0819 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-04 15.51.08.ndpi,DOG2 Batch 2
+169,Rapa,825,Guelph,Ellie,7.2,34.9,Mixed Breed,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,97,1,147,1,0825 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.04.35.ndpi,Box23
+170,Rapa,825,Guelph,Ellie,7.2,34.9,Mixed Breed,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,97,1,147,1,0825 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.06.34.ndpi,Box23
+171,Rapa,903,Tufts,Walter,4,33,Mixed Breed,Castrated male,Left distal radius,NPH,0,elevated,NPHEALP,3,0,3,0, 0903 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.08.58.ndpi,Box23
+172,Rapa,903,Tufts,Walter,4,33,Mixed Breed,Castrated male,Left distal radius,NPH,0,elevated,NPHEALP,3,0,3,0,0903 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.10.40.ndpi,Box23
+173,Rapa,908,Tufts,Rainey,9.8,27.8,Alaskan Malamute,Spayed female,Left diaphyseal humerus,NPH,0,Normal,NPHNALP,151,1,151,1,0908 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 11.51.58.ndpi,DOG2 Batch 2
+174,Rapa,908,Tufts,Rainey,9.8,27.8,Alaskan Malamute,Spayed female,Left diaphyseal humerus,NPH,0,Normal,NPHNALP,151,1,151,1,908  Tumor B,Surgery,Tumor,Primary Tumor,2021-12-10 01.53.38.ndpi,Box 4
+175,Rapa,1001,UCD,Jade,7.3,70.2,Mastiff,Spayed female,Left distal tibia,NPH,0,Elevated,NPHEALP,399,1,554,1,1001 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 10.24.44.ndpi,DOG2 Batch 2
+176,Rapa,1001,UCD,Jade,7.3,70.2,Mastiff,Spayed female,Left distal tibia,NPH,0,Elevated,NPHEALP,399,1,554,1,1001 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 10.28.24.ndpi,DOG2 Batch 2
+177,Rapa,1003,UCD,Kaya,9.2,46.5,Rhodesian Ridgeback,Spayed female,Left distal radius,NPH,0,Elevated,NPHEALP,99,1,140,1,1003 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 10.34.07.ndpi,DOG2 Batch 2
+178,Rapa,1003,UCD,Kaya,9.2,46.5,Rhodesian Ridgeback,Spayed female,Left distal radius,NPH,0,Elevated,NPHEALP,99,1,140,1,1003 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 10.39.30.ndpi,DOG2 Batch 2
+179,Rapa,1005,UCD,Berta,9.4,28.6,Bull Terrier,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,25,0,25,0, 1005 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 10.44.41.ndpi,DOG2 Batch 2
+180,Rapa,1005,UCD,Berta,9.4,28.6,Bull Terrier,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,25,0,25,0,1005 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 10.49.21.ndpi,DOG2 Batch 2
+181,Rapa,1007,UCD,Owsley,8.1,34,Other,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,62,1,236,1,1007 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-24 09.28.16.ndpi,DOG2 original
+182,Rapa,1007,UCD,Owsley,8.1,34,Other,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,62,1,236,1,1007 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-24 09.33.31.ndpi,DOG2 original
+183,Rapa,1009,UCD,Bella,10.4,38.1,Labrador Retriever,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,212,1,251,1,1009 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 10.54.23.ndpi,DOG2 Batch 2
+184,Rapa,1009,UCD,Bella,10.4,38.1,Labrador Retriever,Spayed female,Right distal radius,NPH,0,Normal,NPHNALP,212,1,251,1,1009 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 10.56.37.ndpi,DOG2 Batch 2
+185,Rapa,1013,UCD,Finnegan,11.9,30.9,Other,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,101,1,128,1, 1013 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 11.30.41.ndpi,DOG2 Batch 2
+186,Rapa,1013,UCD,Finnegan,11.9,30.9,Other,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,101,1,128,1, 1013 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 11.35.19.ndpi,DOG2 Batch 2
+187,Rapa,1015,UCD,Lola,10,25.3,Mixed Breed,Spayed female,Right distal radius,NPH,0,Elevated,NPHEALP,55,1,110,1,1015 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 13.52.10.ndpi,DOG2 original
+188,Rapa,1015,UCD,Lola,10,25.3,Mixed Breed,Spayed female,Right distal radius,NPH,0,Elevated,NPHEALP,55,1,110,1,1015 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 14.01.37.ndpi,DOG2 original
+189,Rapa,1020,UCD,Jaxton,7.2,36.8,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,97,1,114,1,1020 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 14.17.26.ndpi,DOG2 original
+190,Rapa,1020,UCD,Jaxton,7.2,36.8,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,97,1,114,1,1020 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 14.26.53.ndpi,DOG2 original
+191,Rapa,1024,UCD,Balki,10.3,33.1,Greyhound,Castrated male,Left proximal femur,NPH,0,Normal,NPHNALP,92,1,98,1, 1024 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 11.45.44.ndpi,DOG2 Batch 2
+192,Rapa,1024,UCD,Balki,10.3,33.1,Greyhound,Castrated male,Left proximal femur,NPH,0,Normal,NPHNALP,92,1,98,1, 1024 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 11.53.50.ndpi,DOG2 Batch 2
+193,Rapa,1101,Cornell,Freedom,12,32.2,Labrador Retriever,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,496,1,607,1, 1101 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 11.58.44.ndpi,DOG2 Batch 2
+194,Rapa,1101,Cornell,Freedom,12,32.2,Labrador Retriever,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,496,1,607,1, 1101 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 12.01.40.ndpi,DOG2 Batch 2
+195,Rapa,1103,Cornell,Jazzmine,4.1,40.2,Rottweiler,Spayed female,Left distal femur,NPH,0,Elevated,NPHEALP,70,1,75,1, 1103 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 14.39.00.ndpi,DOG2 original
+196,Rapa,1103,Cornell,Jazzmine,4.1,40.2,Rottweiler,Spayed female,Left distal femur,NPH,0,Elevated,NPHEALP,70,1,75,1, 1103 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-23 10.36.16.ndpi,DOG2 original
+197,Rapa,1104,Cornell,Brodey,7.3,60.8,Newfoundland,Castrated male,Left proximal tibia,NPH,0,Normal,NPHNALP,74,1,75,1, 1104 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 12.22.05.ndpi,DOG2 Batch 2
+198,Rapa,1104,Cornell,Brodey,7.3,60.8,Newfoundland,Castrated male,Left proximal tibia,NPH,0,Normal,NPHNALP,74,1,75,1, 1104 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 12.27.37.ndpi,DOG2 Batch 2
+199,Rapa,1105,Cornell,Chase,4.8,60.9,Other,Male Phenotype,Left distal femur,NPH,0,Normal,NPHNALP,228,1,322,0,1105 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.13.37.ndpi,Box23
+200,Rapa,1105,Cornell,Chase,4.8,60.9,Other,Male Phenotype,Left distal femur,NPH,0,Normal,NPHNALP,228,1,322,0,1105 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.14.34.ndpi,Box23
+201,Rapa,1106,Cornell,Seamus,6,66.2,Great Dane,Castrated male,Right distal ulna,NPH,0,Normal,NPHNALP,224,1,320,1, 1106 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 12.33.32.ndpi,DOG2 Batch 2
+202,Rapa,1106,Cornell,Seamus,6,66.2,Great Dane,Castrated male,Right distal ulna,NPH,0,Normal,NPHNALP,224,1,320,1, 1106 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 12.37.28.ndpi,DOG2 Batch 2
+203,Rapa,1111,Cornell,Stewart,1.9,45,Labrador Retriever,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,96,1,119,1,1111 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.19.04.ndpi,Box23
+204,Rapa,1111,Cornell,Stewart,1.9,45,Labrador Retriever,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,96,1,119,1,1111 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.21.42.ndpi,Box23
+205,Rapa,1401,UGA,Tico,4.8,29.4,Mixed Breed,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,103,0,251,1, 1401 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 12.41.10.ndpi,DOG2 Batch 2
+206,Rapa,1401,UGA,Tico,4.8,29.4,Mixed Breed,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,103,0,251,1, 1401 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 12.51.55.ndpi,DOG2 Batch 2
+207,Rapa,1403,UGA,Sammy,9.6,39,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,56,1,106,0,1403 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.25.56.ndpi,Box23
+208,Rapa,1403,UGA,Sammy,9.6,39,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,56,1,106,0,1403 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 14.20.34.ndpi,Box23
+209,Rapa,1405,UGA,Max,5.8,60,Great Dane,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,27,0,27,0, 1405 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 12.59.59.ndpi,DOG2 Batch 2
+210,Rapa,1405,UGA,Max,5.8,60,Great Dane,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,27,0,27,0,1405 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 13.06.40.ndpi,DOG2 Batch 2
+211,Rapa,1405,UGA,Max,5.8,60,Great Dane,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,27,0,27,0,1405 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 20.59.03.ndpi,Box 2
+212,Rapa,1407,UGA,Kobi,8.1,65,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,55,1,113,0, 1407 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 13.12.05.ndpi,DOG2 Batch 2
+213,Rapa,1407,UGA,Kobi,8.1,65,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Elevated,PHEALP,55,1,113,0,1407 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 13.25.57.ndpi,DOG2 Batch 2
+214,Rapa,1409,UGA,Dude,8.5,47.9,Rottweiler,Castrated male,Right proximal humerus,PH,1,Elevated,PHEALP,55,1,88,0,1409 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 15.34.37.ndpi,DOG2 original
+215,Rapa,1409,UGA,Dude,8.5,47.9,Rottweiler,Castrated male,Right proximal humerus,PH,1,Elevated,PHEALP,55,1,88,0,1409 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-02 15.05.06.ndpi,DOG2 Batch 2
+216,Rapa,1411,UGA,Gunner,6.2,42.6,Rottweiler,Castrated male,Right distal tibia,NPH,0,Elevated,NPHEALP,859,1,909,1, 1411 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 13.31.43.ndpi,DOG2 Batch 2
+217,Rapa,1411,UGA,Gunner,6.2,42.6,Rottweiler,Castrated male,Right distal tibia,NPH,0,Elevated,NPHEALP,859,1,909,1, 1411 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 13.37.09.ndpi,DOG2 Batch 2
+218,Rapa,1413,UGA,Hamlet,6.3,62,Great Dane,Male Phenotype,Right distal radius,NPH,0,Normal,NPHNALP,157,1,232,1,1413 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.35.49.ndpi,Box23
+219,Rapa,1413,UGA,Hamlet,6.3,62,Great Dane,Male Phenotype,Right distal radius,NPH,0,Normal,NPHNALP,157,1,232,1,1413 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.36.59.ndpi,Box23
+220,Rapa,1415,UGA,Olaf,2,25,Airedale Terrier,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,304,1,447,1,1415 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 13.52.41.ndpi,DOG2 Batch 2
+221,Rapa,1415,UGA,Olaf,2,25,Airedale Terrier,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,304,1,447,1, 1415 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 13.56.33.ndpi,DOG2 Batch 2
+222,Rapa,1417,UGA,Buzzbee,7.5,36.8,Mixed Breed,Castrated male,Right proximal humerus,PH,1,Normal,PHNALP,200,1,200,1, 1417 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 14.01.26.ndpi,DOG2 Batch 2
+223,Rapa,1417,UGA,Buzzbee,7.5,36.8,Mixed Breed,Castrated male,Right proximal humerus,PH,1,Normal,PHNALP,200,1,200,1,1417 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 21.11.11.ndpi,Box 2
+224,Rapa,1419,UGA,Wallace,7,29.2,Mixed Breed,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,504,1,850,1, 1419 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 14.09.32.ndpi,DOG2 Batch 2
+225,Rapa,1419,UGA,Wallace,7,29.2,Mixed Breed,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,504,1,850,1, 1419 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 14.12.42.ndpi,DOG2 Batch 2
+226,Rapa,1421,UGA,Enzo,7,33,Mixed Breed,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,161,1,284,1,1421 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.38.28.ndpi,Box23
+227,Rapa,1421,UGA,Enzo,7,33,Mixed Breed,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,161,1,284,1,1421 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.40.59.ndpi,Box23
+228,Rapa,1703,AU,Emma,9.5,33.8,Bernese Mountain Dog,Spayed female,Left distal femur,NPH,0,Normal,NPHNALP,49,1,56,1,1703 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.42.43.ndpi,Box23
+229,Rapa,1703,AU,Emma,9.5,33.8,Bernese Mountain Dog,Spayed female,Left distal femur,NPH,0,Normal,NPHNALP,49,1,56,1,1703 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.45.16.ndpi,Box23
+230,Rapa,1713,AU,Leo R.,6.6,49.5,Golden Retriever,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,666,0,857,0, 1713 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 15.08.34.ndpi,DOG2 Batch 2
+231,Rapa,1713,AU,Leo R.,6.6,49.5,Golden Retriever,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,666,0,857,0, 1713 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 15.11.44.ndpi,DOG2 Batch 2
+232,Rapa,1714,AU,Leo D.,4.8,41.5,Other,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,155,0,268,1,1714 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 12.49.10.ndpi,Box23
+233,Rapa,1714,AU,Leo D.,4.8,41.5,Other,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,155,0,268,1,1714 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.50.22.ndpi,Box23
+234,Rapa,1715,AU,Charlie,10.5,50.1,Golden Retriever,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,252,1,281,1,,Surgery,Tumor,Primary Tumor,FFPE block not available,
+235,Rapa,1801,NCSU,Sox,12,38.6,Boxer,Castrated male,Right proximal humerus,PH,1,Normal,PHNALP,119,1,170,1,1801 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 12.51.40.ndpi,Box23
+236,Rapa,1805,NCSU,Elwood,9.5,40,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,63,1,111,1,1805 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 17.15.07.ndpi,DOG2 original
+237,Rapa,1805,NCSU,Elwood,9.5,40,Labrador Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,63,1,111,1,1805 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 17.27.42.ndpi,DOG2 original
+238,Rapa,1806,NCSU,Beaux,6,42.2,Great Pyrenees,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,907,0,947,0, 1806 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 18.03.49.ndpi,Box 9
+239,Rapa,1806,NCSU,Beaux,6,42.2,Great Pyrenees,Castrated male,Right distal tibia,NPH,0,Normal,NPHNALP,907,0,947,0, 1806 Tumor A,Surgery,Tumor,Primary Tumor,missing halo ID,
+240,Rapa,1901,TXAMU,Thunder,2.8,33.2,Labrador Retriever,Spayed female,Left proximal tibia,NPH,0,normal,NPHNALP,1001,1,1428,0,1901 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 13.02.54.ndpi,Box23
+241,Rapa,1901,TXAMU,Thunder,2.8,33.2,Labrador Retriever,Spayed female,Left proximal tibia,NPH,0,normal,NPHNALP,1001,1,1428,0,1901 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 13.06.47.ndpi,Box23
+242,Rapa,1901,TXAMU,Thunder,2.8,33.2,Labrador Retriever,Spayed female,Left proximal tibia,NPH,0,normal,NPHNALP,1001,1,1428,0,1801 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 14.17.54.ndpi,Box23
+243,Rapa,1903,TXAMU,Cooper,10.8,40.2,German Shorthaired Pointer,Castrated male,Right distal radius,NPH,0,Elevated,NPHEALP,207,1,245,1, 1903 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 15.22.46.ndpi,DOG2 Batch 2
+244,Rapa,1903,TXAMU,Cooper,10.8,40.2,German Shorthaired Pointer,Castrated male,Right distal radius,NPH,0,Elevated,NPHEALP,207,1,245,1, 1903 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-05 15.29.32.ndpi,DOG2 Batch 2
+245,Rapa,1904,TXAMU,Stella,6.9,25.6,Bulldog,Spayed female,Right proximal femur,NPH,0,Elevated,NPHEALP,163,1,163,1, 1904 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 12.19.08.ndpi,DOG2 Batch 2
+246,Rapa,1904,TXAMU,Stella,6.9,25.6,Bulldog,Spayed female,Right proximal femur,NPH,0,Elevated,NPHEALP,163,1,163,1,1904  Tumor B,Surgery,Tumor,Primary Tumor,2021-12-10 02.36.16.ndpi,Box 4
+247,Rapa,1905,TXAMU,Leibniz,4.9,75.8,Saint Bernard,Castrated male,Right distal radius,NPH,0,Elevated,NPHEALP,45,0,231,0, 1905 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-05 15.32.31.ndpi,DOG2 Batch 2
+248,Rapa,1905,TXAMU,Leibniz,4.9,75.8,Saint Bernard,Castrated male,Right distal radius,NPH,0,Elevated,NPHEALP,45,0,231,0, 1905 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-06 08.00.25.ndpi,DOG2 Batch 2
+249,Rapa,1906,TXAMU,Lucky,12.2,30.2,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Normal,PHNALP,101,1,223,0,1906 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 13.09.16.ndpi,Box23
+250,Rapa,1906,TXAMU,Lucky,12.2,30.2,Mixed Breed,Castrated male,Left proximal humerus,PH,1,Normal,PHNALP,101,1,223,0,1906 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 13.11.09.ndpi,Box23
+251,Rapa,1907,TXAMU,Maggie,9.1,36.2,Great Pyrenees,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,104,1,163,0, 1907 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-06 07.52.45.ndpi,DOG2 Batch 2
+252,Rapa,1907,TXAMU,Maggie,9.1,36.2,Great Pyrenees,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,104,1,163,0, 1907 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-06 07.56.00.ndpi,DOG2 Batch 2
+253,Rapa,1908,TXAMU,Sirius,4.4,,Mastiff,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,97,1,157,1, 1908 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-06 07.46.11.ndpi,DOG2 Batch 2
+254,Rapa,1908,TXAMU,Sirius,4.4,,Mastiff,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,97,1,157,1, 1908 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-06 07.49.39.ndpi,DOG2 Batch 2
+255,Rapa,1909,TXAMU,Evie,6.7,26.4,Mixed Breed,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,731,1,855,0, 1909 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-06 07.34.58.ndpi,DOG2 Batch 2
+256,Rapa,1909,TXAMU,Evie,6.7,26.4,Mixed Breed,Spayed female,Right distal tibia,NPH,0,Normal,NPHNALP,731,1,855,0, 1909 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-06 07.38.35.ndpi,DOG2 Batch 2
+257,Rapa,1910,TXAMU,Michigan,8.9,44.6,Siberian Husky,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,61,1,166,0,1910 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 13.12.22.ndpi,Box23
+258,Rapa,1910,TXAMU,Michigan,8.9,44.6,Siberian Husky,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,61,1,166,0,1910 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 13.15.34.ndpi,Box23
+259,Rapa,1912,TXAMU,Gus,7,52.8,Great Pyrenees,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,327,1,327,1,1912 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-08 21.28.13.ndpi,Box 2
+260,Rapa,1913,TXAMU,Cooper,5.3,27.6,Mixed Breed,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,204,1,331,1,1913 Tumor A ,Surgery,Tumor,Primary Tumor,2021-12-02 12.22.25.ndpi,DOG2 Batch 2
+261,Rapa,1913,TXAMU,Cooper,5.3,27.6,Mixed Breed,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,204,1,331,1,1913 Tumor B ,Surgery,Tumor,Primary Tumor,2021-12-02 12.25.48.ndpi,DOG2 Batch 2
+262,Rapa,1914,TXAMU,Lucy,5.6,28,Golden Retriever,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,69,1,99,1,1914 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 13.20.36.ndpi,Box23
+263,Rapa,1914,TXAMU,Lucy,5.6,28,Golden Retriever,Spayed female,Left distal radius,NPH,0,Normal,NPHNALP,69,1,99,1,1914 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 13.22.01.ndpi,Box23
+264,Rapa,1915,TXAMU,Domino,9.3,37,Greyhound,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,814,1,814,1,1915 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 12.28.01.ndpi,DOG2 Batch 2
+265,Rapa,1915,TXAMU,Domino,9.3,37,Greyhound,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,814,1,814,1,1915  Tumor B,Surgery,Tumor,Primary Tumor,2021-12-10 02.45.10.ndpi,Box 4
+266,Rapa,1917,TXAMU,Yank,6.3,51,Great Dane,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,184,1,189,0, 1917 Tumor A,Surgery,Tumor,Primary Tumor,2022-01-11 18.29.43.ndpi,Box 9
+267,Rapa,1917,TXAMU,Yank,6.3,51,Great Dane,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,184,1,189,0, 1917 Tumor B,Surgery,Tumor,Primary Tumor,2022-01-11 18.35.21.ndpi,Box 9
+268,Rapa,2001,KSU,Ernie,1.7,44.1,Great Pyrenees,Female Phenotype,Left distal radius,NPH,0,Normal,NPHNALP,204,1,260,1,2001 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 13.08.12.ndpi,DOG2 Batch 2
+269,Rapa,2001,KSU,Ernie,1.7,44.1,Great Pyrenees,Female Phenotype,Left distal radius,NPH,0,Normal,NPHNALP,204,1,260,1,2001 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 17.02.10.ndpi,DOG2 Batch 2
+270,Rapa,2003,KSU,Maverick,9.9,25.5,Mixed Breed,Castrated male,Left distal femur,NPH,0,Elevated,NPHEALP,156,1,166,1, 2003 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-02 14.28.24.ndpi,DOG2 Batch 2
+271,Rapa,2003,KSU,Maverick,9.9,25.5,Mixed Breed,Castrated male,Left distal femur,NPH,0,Elevated,NPHEALP,156,1,166,1, 2003 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 17.17.29.ndpi,DOG2 Batch 2
+272,Rapa,2007,KSU,Gracie Sue,6.9,45.3,Old English Sheepdog,Spayed female,Left distal tibia,NPH,0,Normal,NPHNALP,472,1,694,1, 2007 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 11.17.51.ndpi,DOG2 Batch 2
+273,Rapa,2007,KSU,Gracie Sue,6.9,45.3,Old English Sheepdog,Spayed female,Left distal tibia,NPH,0,Normal,NPHNALP,472,1,694,1, 2007 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 11.27.29.ndpi,DOG2 Batch 2
+274,Rapa,2009,KSU,Riley,6,36.2,Great Pyrenees,Spayed female,Left distal tibia,NPH,0,Normal,NPHNALP,84,1,151,0, 2009 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 11.33.01.ndpi,DOG2 Batch 2
+275,Rapa,2009,KSU,Riley,6,36.2,Great Pyrenees,Spayed female,Left distal tibia,NPH,0,Normal,NPHNALP,84,1,151,0, 2009 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 11.38.51.ndpi,DOG2 Batch 2
+276,Rapa,2013,KSU,Benny,4,38.5,Golden Retriever,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,704,0,866,0,2013 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 13.34.06.ndpi,Box23
+277,Rapa,2013,KSU,Benny,4,38.5,Golden Retriever,Castrated male,Right distal femur,NPH,0,Normal,NPHNALP,704,0,866,0,2013 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 13.35.52.ndpi,Box23
+278,Rapa,2201,VT/UGA,Gigi,8.1,49,Saint Bernard,Spayed female,Left proximal humerus,PH,1,Normal,PHNALP,129,0,129,0,2201 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 14.06.56.ndpi,Box23
+279,Rapa,2205,VT,Henry,9,33.4,Greyhound,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,524,1,639,1, 2205 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 12.15.22.ndpi,DOG2 Batch 2
+280,Rapa,2205,VT,Henry,9,33.4,Greyhound,Castrated male,Left distal femur,NPH,0,Normal,NPHNALP,524,1,639,1,2205 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 21.34.06.ndpi,Box 2
+281,Rapa,2214,VT,Jack,11.3,34.9,Golden Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,144,0,309,1,2214 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 13.43.46.ndpi,Box23
+282,Rapa,2214,VT,Jack,11.3,34.9,Golden Retriever,Castrated male,Right distal radius,NPH,0,Normal,NPHNALP,144,0,309,1,2214 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 13.46.13.ndpi,Box23
+283,Rapa,2215,VT,Mischka,7.8,39,German Shepherd Dog,Spayed Female,Right distal femur,NPH,0,Elevated,NPHEALP,62,0,159,0, 2215 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 13.42.27.ndpi,DOG2 Batch 2
+284,Rapa,2215,VT,Mischka,7.8,39,German Shepherd Dog,Spayed Female,Right distal femur,NPH,0,Elevated,NPHEALP,62,0,159,0, 2215 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 13.49.52.ndpi,DOG2 Batch 2
+285,Rapa,2301,Oregon,Scout,5,46,Great Pyrenees,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,210,1,270,1,2301 Tumor A,Surgery,Tumor,Primary Tumor,2022-04-20 13.48.44.ndpi,Box23
+286,Rapa,2301,Oregon,Scout,5,46,Great Pyrenees,Castrated male,Left distal tibia,NPH,0,Normal,NPHNALP,210,1,270,1,2301 Tumor B,Surgery,Tumor,Primary Tumor,2022-04-20 14.24.52.ndpi,Box23
+287,Rapa,2307,Oregon,Gigi,6.6,53.5,Great Dane,Spayed female,Right distal radius,NPH,0,Elevated,NPHEALP,252,1,445,1, 2307 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 14.44.04.ndpi,DOG2 Batch 2
+288,Rapa,2307,Oregon,Gigi,6.6,53.5,Great Dane,Spayed female,Right distal radius,NPH,0,Elevated,NPHEALP,252,1,445,1,2307 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 14.54.37.ndpi,DOG2 Batch 2
+289,Rapa,2312,Oregon,Tasia,9.7,38.1,Labrador Retriever,Spayed female,Right proximal ulna,NPH,0,Normal,NPHNALP,931,1,936,1,2312 Tumor B,Surgery,Tumor,Primary Tumor,2021-04-22 19.07.49.ndpi,DOG2 original
+290,Rapa,2312,Oregon,Tasia,9.7,38.1,Labrador Retriever,Spayed female,Right proximal ulna,NPH,0,Normal,NPHNALP,931,1,936,1,2312 Tumor A,Surgery,Tumor,Primary Tumor,2021-04-22 19.17.41.ndpi,DOG2 original
+291,Rapa,2317,Oregon,Brucee,10.4,25,Mixed Breed,Castrated male,Right proximal humerus,PH,1,Elevated,PHEALP,459,1,459,1, 2317 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 15.45.30.ndpi,DOG2 Batch 2
+292,Rapa,2317,Oregon,Brucee,10.4,25,Mixed Breed,Castrated male,Right proximal humerus,PH,1,Elevated,PHEALP,459,1,459,1,2317 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-08 22.33.21.ndpi,Box 2
+293,Rapa,2321,Oregon,Angus,10.4,52.5,Labrador Retriever,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,84,1,368,1, 2321 Tumor A,Surgery,Tumor,Primary Tumor,2021-12-03 16.02.10.ndpi,DOG2 Batch 2
+294,Rapa,2321,Oregon,Angus,10.4,52.5,Labrador Retriever,Castrated male,Left distal radius,NPH,0,Normal,NPHNALP,84,1,368,1, 2321 Tumor B,Surgery,Tumor,Primary Tumor,2021-12-03 16.06.46.ndpi,DOG2 Batch 2
