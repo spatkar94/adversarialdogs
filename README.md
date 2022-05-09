@@ -40,6 +40,8 @@ python inference_prob-map_SP_full_final.py --csv <csv file containing paths to W
 ```
 The [inference script](inference_prob-map_SP_full_final.py) will then generate spatial probability maps, one per histological subtype as shown in the diagram below:
 
+
+
 ![](spmap_gen.png)
 
 Once probability maps have been generated, run [simple_feature_aggregation.py](simple_feature_aggregation.py) to estimate the burden of each osteosarcoma variant in each whole slide image. Given the estimated burden for each whole slide image, one can then perform remaining downstream analyses as described [here](Survival_analysis.md)
