@@ -114,7 +114,7 @@ class Classifier(torch.nn.Module):
 
 class extractPatch:
 
-    def __init__(self):
+    def __init__(self, fe_path, classifier_path):
         self.save_location = '/data/spatkar/slide_probs_dog'#args.save_dir #'/data/AIR/Chen_AI/Data/json_output'
         self.mag_extract = [10]#[int(args.mag)] # specify which magnifications you wish to pull images from
         self.save_image_size = 256   # specify image size to be saved (note this is the same for all magnifications)
@@ -127,15 +127,12 @@ class extractPatch:
 
         
 
-        self.model0_path = '/data/spatkar/saved_models/resnet50_allclasses_10x_domain_adapt_final_fe_m0_model_best.pth'
-        self.model1_path = '/data/spatkar/saved_models/resnet50_allclasses_10x_domain_adapt_final_os_classifier_m0_model_best.pth'#args.model_file #'/data/AIR/harmonsa/zhao/tumor_seg/training_log/exported_models/deeplabv3_resnet50_10ep_lr1e4_nonorm.pkl'
-        #self.model2_path = '/home/air/spatkar/saved_models/resnet50_OB_nonOB_10xm2_model_best.pth'
-        #self.model3_path = '/home/air/spatkar/saved_models/resnet50_HN_nonHN_10xm3_model_best.pth'
-        #self.model4_path = '/home/air/spatkar/saved_models/resnet50_CBFBGCVR_10xm4_model_best.pth'
-        self.stain = 'none'#args.normstain # should be 'none', 'macenko' or 'vahadane'
-        #self.model_path2 = '/data/MIP/harmonsa/pca_ccf/new_models/exported_models/binary_mobilenetv3s_50ep_lr1e4_wAug_MixUpLS_sz1000_bs8_oversamp2_weighted2_unfrz_CELoss2.pkl'
-
-    def parseMeta_and_pullTiles(self, CSV_FILE):
+        self.model0_path = fe_path
+        self.model1_path = classifier_path #args.model_file 
+        
+        self.stain = 'none' #args.normstain # should be 'none', 'macenko' or 'vahadane'
+        
+    def parseMeta_and_pullTiles(self, csvfile):
         if not os.path.exists(os.path.join(self.save_location)):
             os.mkdir(os.path.join(self.save_location))
 
@@ -146,27 +143,18 @@ class extractPatch:
         
         base.load_state_dict(torch.load(self.model0_path))
         os_classifier.load_state_dict(torch.load(self.model1_path))
-        #m2.load_state_dict(torch.load(self.model2_path))
-        #m3.load_state_dict(torch.load(self.model3_path))
-        #m4.load_state_dict(torch.load(self.model4_path))
+        
 
         base = base.cuda()
         os_classifier = os_classifier.cuda()
-        #m2 = m2.cuda()
-        #m3 = m3.cuda()
-        #m4 = m4.cuda()
+        
 
         base.eval()
         os_classifier.eval()
-        # m2.eval()
-        # m3.eval()
-        # m4.eval()
+        
 
-        # i have a for loop for validation WSI
-        #filelist = glob.glob('/home/air/Shared_Drives/MIP_network/MIP/AIR/Scanned-images/Beck/*.ndpi') + glob.glob('/home/air/Shared_Drives/MIP_network/MIP/AIR/Scanned-images/DOG2/*.ndpi')
-        #print(filelist[:3])
-        #filelist = ['/home/air/Shared_Drives/MIP_network/MIP/AIR/Scanned-images/Beck/2021-04-24 09.41.08.ndpi']
-        filelist = list(pd.read_csv(CSV_FILE).files.values)
+        
+        filelist = list(pd.read_csv(csvfile).files.values)
         done_files = []
         slides_done = list(np.unique([x.split('_')[2].split('/')[1] for x in done_files]))
         normalize = transforms.Normalize(mean=[0.8938, 0.5708, 0.7944], std = [0.1163, 0.1528, 0.0885])
@@ -207,9 +195,8 @@ class extractPatch:
 
             # intermeadiate level for probability map
             # in my case, I selected level 5 because it was a reasonable size (10000x10000 pixels) to see regional characteristics without being too large
-            # to run on biowulf I needed to request extra mem (20g)
             lvl_img = oslide.read_region((0,0),5,oslide.level_dimensions[5])
-            # x_map is where I save probabilities... I only had binary task. you will need to add additional maps for additional classes
+            # x_map is where I save probabilities... 
             # PIL image flips x and y coords
             #OB vs rest
             x_count = np.zeros((lvl_img.size[1],lvl_img.size[0]),  float)
@@ -382,7 +369,14 @@ class extractPatch:
         return prop_ws
 
 if __name__ == '__main__':
-    c = extractPatch()
-    
-    c.parseMeta_and_pullTiles()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--csv", type=str, help="csv file containing paths to each whole slide image")
+    parser.add_argument("--fe", type=str, help="path to file storing trained weights of resnet50 feature extractor")
+    parser.add_argument("--cls", type=str, help="path to file storing trained weights of histological subtype classifier")
+    args = parser.parse_args()
+    CSV_FILE = args.csv
+    FE_FILE = args.fe
+    CLS_FILE = args.cls
+    c = extractPatch(FE_FILE, CLS_FILE)
+    c.parseMeta_and_pullTiles(CSV_FILE)
 
