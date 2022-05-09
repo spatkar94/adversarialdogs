@@ -114,8 +114,8 @@ class Classifier(torch.nn.Module):
 
 class extractPatch:
 
-    def __init__(self, fe_path, classifier_path):
-        self.save_location = '/data/spatkar/slide_probs_dog'#args.save_dir #'/data/AIR/Chen_AI/Data/json_output'
+    def __init__(self, fe_path, classifier_path, savedir):
+        self.save_location = savedir #args.save_dir
         self.mag_extract = [10]#[int(args.mag)] # specify which magnifications you wish to pull images from
         self.save_image_size = 256   # specify image size to be saved (note this is the same for all magnifications)
         self.run_image_size = 256
@@ -373,10 +373,12 @@ if __name__ == '__main__':
     parser.add_argument("--csv", type=str, help="csv file containing paths to each whole slide image")
     parser.add_argument("--fe", type=str, help="path to file storing trained weights of resnet50 feature extractor")
     parser.add_argument("--cls", type=str, help="path to file storing trained weights of histological subtype classifier")
+    parser.add_argument("--savedir", type=str, help="path to save location")
     args = parser.parse_args()
     CSV_FILE = args.csv
     FE_FILE = args.fe
     CLS_FILE = args.cls
-    c = extractPatch(FE_FILE, CLS_FILE)
+    SAVE_DIR = args.savedir
+    c = extractPatch(FE_FILE, CLS_FILE, SAVE_DIR)
     c.parseMeta_and_pullTiles(CSV_FILE)
 
