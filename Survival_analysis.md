@@ -61,7 +61,7 @@ library(matrixStats)
 #Scripts to read in the canine OS clinical metadata
 
 #clinical metadata for all cases that received Rapamycin (mTOR inhibitor) in addition to standard of care therapy
-Slides2Outcomes_Rapa_all <- read_csv("~/Dog/Slides2Outcomes_Rapa_all_new.csv")
+Slides2Outcomes_Rapa_all <- read_csv("Slides2Outcomes_Rapa_all_new.csv")
 ```
 
     ## New names:
@@ -78,7 +78,7 @@ Slides2Outcomes_Rapa_all <- read_csv("~/Dog/Slides2Outcomes_Rapa_all_new.csv")
 
 ``` r
 #clinical metadata for all cases that received standard of care therapy
-Slides2Outcomes_SOC_all <- read_csv("~/Dog/Slides2Outcomes_SOC_all_new.csv")
+Slides2Outcomes_SOC_all <- read_csv("Slides2Outcomes_SOC_all_new.csv")
 ```
 
     ## New names:
@@ -107,13 +107,12 @@ clindat_all$ALP[clindat_all$ALP == "elevated"] <- "Elevated"
 
 
 #read in estimated burden for each histological subtype (determined by AI predictions)
-dog_slide_level_features <- read.csv("~/Downloads/dog_slide_level_features.csv")
+dog_slide_level_features <- read.csv("dog_slide_level_features.csv")
 rownames(dog_slide_level_features) <- dog_slide_level_features$slide
 dog_slide_level_features <- dog_slide_level_features[,-1]
 
 #slides previously annotated by pathologist and used to train and validate AI classifier
-ann_slides = union(list.files('~/Dog/annotations/',pattern = "*.xml"), union(list.files('~/Dog/annotations_new/',pattern = "*.xml"),list.files('~/Dog/annotations_19012022/',pattern = '*.xml')))
-ann_slides1 = sapply(ann_slides, function(x) gsub('\\.xml','',x))
+ann_slides = read_csv("annotated_slides.csv")$slides
 
 
 #collect histological data for all cases with matched clinical metadata
@@ -122,7 +121,7 @@ clindat_all <- clindat_all[common,]
 dog_slide_level_features <- dog_slide_level_features[common,]
 
 #record which slides were previously annotated by pathologist
-clindat_all$annotated <- sapply(common, function(x) x %in% ann_slides1)
+clindat_all$annotated <- sapply(common, function(x) x %in% ann_slides)
 
 dd <- dog_slide_level_features
 
