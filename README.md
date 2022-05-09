@@ -27,8 +27,8 @@ Prior to running the [training script](dogOS_domain_adapt.py), pre-process the c
 ...
 │   ├── slideN
 ```
-Note: A patch can have more than one class label depending on overlapping pathologist annotations. See the scripts for how the class label for such patches is resolved. After pre-processing the data, the training script can be invoked as follows:
+*Note:* A patch can have more than one class label depending on overlapping pathologist annotations. See the scripts for how the class label for such patches is resolved. After pre-processing the data, the training script can be invoked as follows:
 
 ```
-python dogOS_domain_adapt.py --source <path/to/source/data> --target <path/to/target/data>
+python dogOS_domain_adapt.py --source <path/to/source/rootdir> --target <path/to/target/rootdir>
 ```
