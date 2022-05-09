@@ -45,9 +45,10 @@ python inference_prob-map_SP_full_final.py --csv <csv file containing paths to W
 
 ![](spmap_gen.png)
 
-Once probability maps have been generated, run [simple_feature_aggregation.py](simple_feature_aggregation.py) as shown below to estimate the burden of each osteosarcoma variant in each whole slide image. Given the estimated burden for each whole slide image, one can then perform remaining downstream analyses as described [here](Survival_analysis.md)
-
+Once probability maps have been generated, run [simple_feature_aggregation.py](simple_feature_aggregation.py) as shown below to estimate the burden of each osteosarcoma variant in each whole slide image. 
 ```
 python simple_feature_aggregation.py --savedir </path/to/saved/location/of/probability/maps>
 ```
+
+Given the estimated burden for each whole slide image, one can then perform remaining downstream analyses as described [here](Survival_analysis.md)
 
