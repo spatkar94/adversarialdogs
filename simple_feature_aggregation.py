@@ -11,9 +11,11 @@ import argparse
 
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
-	parser.add_argument(
+        parser.add_argument("--savedir", type=str, help="path to save location")
+        args = parser.parse_args()
+	SAVE_DIR = args.savedir
 	features = {}
-	imgs = sorted(glob.glob('/data/spatkar/slide_probs_dog/*_lowres.tiff'))
+	imgs = sorted(glob.glob(os.path.join(SAVE_DIR,'*_lowres.tiff')))
 	print(imgs[:10])
 	tissue_masks = []
 	for i in tqdm(range(len(imgs))):
@@ -31,7 +33,7 @@ if __name__ == "__main__":
 	classes = ['OB','CB','FB','GC','HN','VR']
 	for lab in classes:
 		print(lab)
-		probmaps = sorted(glob.glob('/data/spatkar/slide_probs_dog/*_prob{}.jpeg'.format(lab)))
+		probmaps = sorted(glob.glob(os.path.join(SAVE_DIR,'*_prob{}.jpeg'.format(lab))))
 		print(probmaps[:10])
 		slides = [os.path.basename(x).split('_')[0] for x in sorted(glob.glob('/data/spatkar/slide_probs_dog/*_prob{}.jpeg'.format(lab)))]
 		features[lab] = {}
@@ -42,7 +44,7 @@ if __name__ == "__main__":
 			features[lab][slides[i]] = (np.sum(img > 0.5))
 
 	slide_features = pd.DataFrame(features)
-	slide_features.to_csv('/data/spatkar/dog_slide_level_features.csv')
+	slide_features.to_csv('dog_slide_level_features.csv')
 
 
 
