@@ -32,3 +32,5 @@ Prior to running the [training script](dogOS_domain_adapt.py), pre-process the c
 ```
 python dogOS_domain_adapt.py --source <path/to/source/rootdir> --target <path/to/target/rootdir>
 ```
+
+## Instructions for generating spatial probability maps corresponding to each whole slide image
