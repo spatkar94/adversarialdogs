@@ -37,7 +37,7 @@ python dogOS_domain_adapt.py --source <path/to/source/rootdir> --target <path/to
 To generate spatial probability maps for each WSI using the trained model, you can run the following command. The [inference script](inference_prob-map_SP_full_final.py) will then generate spatial probability maps, one per histological subtype as shown in the diagram below:
 
 ```
-python inference_prob-map_SP_full_final.py --csv <csv file containing paths to WSI> --fe </path/to/feature/extractor/weights> --cls </path/to/classifier/weights>
+python inference_prob-map_SP_full_final.py --csv <csv file containing paths to WSI> --fe </path/to/feature/extractor/weights> --cls </path/to/classifier/weights> --savedir </path/to/save/location>
 ```
 
 
