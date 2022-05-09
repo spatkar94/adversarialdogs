@@ -9,3 +9,17 @@ Osteosarcomas are aggressive tumors of the bone with many divergent histologies.
   <li> pytorch=1.9+cu111 </li>
   <li> torchvision=0.10.0+cu111 </li>
 </ul>
+
+## Instructions for adversarially training a resnet50 CNN on canine and human whole slide imaging (WSI) data
+Prior to running the [training script](dogOS_domain_adapt.py), pre-process the whole slide imaging cohort to extract non-overlapping patches from tissue regions. Each WSI patch should be saved in a directory corresponding to the slide with the patch class label appended to the filename.
+
+```bash
+├── rootdir
+│   ├── slide1
+│   │   ├── slide1_patch1_patchlabel-%area.png
+│   │   ├── slide1_patch2_patchlabel-%area.png
+...
+...
+│   ├── slideN
+```
+
