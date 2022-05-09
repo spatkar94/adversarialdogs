@@ -52,3 +52,5 @@ python simple_feature_aggregation.py --savedir </path/to/saved/location/of/proba
 
 Given the estimated burden for each whole slide image, one can then perform remaining downstream analyses as described [here](Survival_analysis.md)
 
+## Access to trained model weights
+For access to the trained model weights or any additional questions, please contact: [patkar.sushant@nih.gov](patkar.sushant@nih.gov)
