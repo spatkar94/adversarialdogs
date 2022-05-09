@@ -11,15 +11,24 @@ Osteosarcomas are aggressive tumors of the bone with many divergent histologies.
 </ul>
 
 ## Instructions for adversarially training a resnet50 CNN on canine and human whole slide imaging (WSI) data
-Prior to running the [training script](dogOS_domain_adapt.py), pre-process the whole slide imaging cohort to extract non-overlapping patches from tissue regions. Each WSI patch should be saved in a directory corresponding to the slide with the patch class label appended to the filename.
+Prior to running the [training script](dogOS_domain_adapt.py), pre-process the canine (source) and human (target) whole slide imaging cohorts to extract non-overlapping patches from tissue regions. Each WSI patch should be saved in a directory corresponding to the slide with the patch class label appended to the filename. The file structure for each cohort is as follows.
 
 ```bash
 ├── rootdir
 │   ├── slide1
 │   │   ├── slide1_patch1_patchlabel-%area.png
 │   │   ├── slide1_patch2_patchlabel-%area.png
+│   │   ├── ...
+│   ├── slide2
+│   │   ├── slide2_patch1_patchlabel-%area.png
+│   │   ├── slide2_patch2_patchlabel-%area.png
+│   │   ├── ...
 ...
 ...
 │   ├── slideN
 ```
+Note: A patch can have more than one class label depending on overlapping pathologist annotations. See the scripts for how the class label for such patches is resolved. After pre-processing the data, the training script can be invoked as follows:
 
+```
+python dogOS_domain_adapt.py --source <path/to/source/data> --target <path/to/target/data>
+```
