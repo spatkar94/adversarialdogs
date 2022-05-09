@@ -34,9 +34,12 @@ python dogOS_domain_adapt.py --source <path/to/source/rootdir> --target <path/to
 ```
 
 ## Instructions for generating spatial probability maps corresponding to each whole slide image
-To generate spatial probability maps for each WSI, you can run the following command
+To generate spatial probability maps for each WSI using the trained model, you can run the following command
 ```
 python inference_prob-map_SP_full_final.py --csv <csv file containing paths to WSI> --fe </path/to/feature/extractor/weights> --cls </path/to/classifier/weights>
 ```
 The [inference script](inference_prob-map_SP_full_final.py) will then generate spatial probability maps, one per histological subtype as shown in the diagram below:
+
 ![](spmap_gen.png)
+
+Once probability maps have been generated, you can run [simple_feature_aggregation.py](simple_feature_aggregation.py), to estimate the burden of each osteosarcoma variant in each whole slide image. Given the estimated burden for each whole slide image, one can then perform remaining downstream analyses as described [here](Survival_analysis.md)
