@@ -135,7 +135,7 @@ class extractPatch:
         self.stain = 'none'#args.normstain # should be 'none', 'macenko' or 'vahadane'
         #self.model_path2 = '/data/MIP/harmonsa/pca_ccf/new_models/exported_models/binary_mobilenetv3s_50ep_lr1e4_wAug_MixUpLS_sz1000_bs8_oversamp2_weighted2_unfrz_CELoss2.pkl'
 
-    def parseMeta_and_pullTiles(self):
+    def parseMeta_and_pullTiles(self, CSV_FILE):
         if not os.path.exists(os.path.join(self.save_location)):
             os.mkdir(os.path.join(self.save_location))
 
@@ -166,7 +166,7 @@ class extractPatch:
         #filelist = glob.glob('/home/air/Shared_Drives/MIP_network/MIP/AIR/Scanned-images/Beck/*.ndpi') + glob.glob('/home/air/Shared_Drives/MIP_network/MIP/AIR/Scanned-images/DOG2/*.ndpi')
         #print(filelist[:3])
         #filelist = ['/home/air/Shared_Drives/MIP_network/MIP/AIR/Scanned-images/Beck/2021-04-24 09.41.08.ndpi']
-        filelist = list(pd.read_csv('/data/spatkar/primary_tumor_slides.csv').files.values)
+        filelist = list(pd.read_csv(CSV_FILE).files.values)
         done_files = []
         slides_done = list(np.unique([x.split('_')[2].split('/')[1] for x in done_files]))
         normalize = transforms.Normalize(mean=[0.8938, 0.5708, 0.7944], std = [0.1163, 0.1528, 0.0885])
@@ -383,5 +383,6 @@ class extractPatch:
 
 if __name__ == '__main__':
     c = extractPatch()
+    
     c.parseMeta_and_pullTiles()
 
