@@ -546,5 +546,5 @@ print(fig2)
 a2 <- ggarrange(fig1,fig2, labels = c("C","D"), nrow = 1, ncol = 2)
 
 sfig2 <- ggarrange(a1,a2, labels = c("",""), nrow = 2, ncol = 1)
-ggsave(sfig2, filename = "~/Dog/SuppFig2.pdf", width = 12, height = 12)
+ggsave(sfig2, filename = "SuppFig2.pdf", width = 12, height = 12)
 ```
