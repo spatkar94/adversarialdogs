@@ -16,6 +16,7 @@ import operator
 import pandas as pd
 import random
 from itertools import cycle
+import argparse
 
 
 #define dataset class for reading in training validation and test whole slide image patches from dog OS tumors
@@ -572,6 +573,12 @@ def save_model(model, name):
 
 #main function
 if __name__ == "__main__":
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--source", type=str, help="path to source data (dogs)")
+     parser.add_argument("--target", type=str, help="path to target data (humans)")
+     args = parser.parse_args()
+     SOURCE_DATA = args.source
+     TARGET_DATA = args.target
      level0 = "m0"
      base = FeatureExtractor(backbone = 'resnet50', use_pretrained = True, freeze_weights=False)
      os_classifier = Classifier(indim = base.out_dim, num_classes = 7, hidden_layers = 0)
@@ -602,13 +609,13 @@ if __name__ == "__main__":
      basic_transforms = transforms.Compose([transforms.Resize((224,224)), transforms.ToTensor(), normalize])
 
 
-     sourcedataset = DogDataset('./patches_10x', level = level0, transform = train_transforms, mode = "train")
-     targetdataset = HumanDataset('/data/spatkar/patches_human', level = level0, transform = train_transforms, mode = "train")
+     sourcedataset = DogDataset(SOURCE_DATA, level = level0, transform = train_transforms, mode = "train")
+     targetdataset = HumanDataset(TARGET_DATA, level = level0, transform = train_transforms, mode = "train")
 
-     valdataset = DogDataset('./patches_10x', level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "val")
-     testdataset = DogDataset('./patches_10x', level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "test")
+     valdataset = DogDataset(SOURCE_DATA, level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "val")
+     testdataset = DogDataset(SOURCE_DATA, level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "test")
      
-     testdataset2 = HumanDataset('/data/spatkar/patches_human', level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "test")
+     testdataset2 = HumanDataset(TARGET_DATA, level = level0, transform = transforms.Compose([transforms.Resize((224,224)),transforms.ToTensor(), normalize]), mode = "test")
 
      ss = SlideSampler(sourcedataset)
      st = SlideSampler(targetdataset)
@@ -779,7 +786,7 @@ if __name__ == "__main__":
      plt.ylabel('performance')
      plt.legend()
      plt.show()
-     plt.savefig('{}_{}_{}_model_perf.png'.format('resnet50_allclasses_10x_domain_adapt__final_033122','mlp',level0))
+     plt.savefig('{}_{}_{}_model_perf.png'.format('resnet50_allclasses_10x_domain_adapt__final','mlp',level0))
      plt.close()
 
 
@@ -796,7 +803,7 @@ if __name__ == "__main__":
      plt.close()
      res = pd.DataFrame({'epoch': ep, 'train loss': train_losses, 'val loss': val_losses,
                   'val mean precision': val_p, 'val mean recall': val_r, 'test mean precision':  test_p, 'test mean recall':test_r})
-     res.to_csv('{}_{}_{}_results.csv'.format('resnet50_allclasses_10x_domain_adapt__final_033122','mlp',level0))
+     res.to_csv('{}_{}_{}_results.csv'.format('resnet50_allclasses_10x_domain_adapt__final','mlp',level0))
 
 
 
