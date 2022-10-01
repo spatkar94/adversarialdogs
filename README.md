@@ -2,8 +2,6 @@
 Osteosarcomas are aggressive tumors of the bone with a variety of divergent histologic patterns. During pathology review, osteosarcomas are subtyped based on the predominant histologic pattern; however, tumors often demonstrate multiple patterns. This high tumor heterogeneity coupled with the relative paucity of samples compared to other tumor types render histology-based prognosis of osteosarcomas challenging. To combat the lower-case numbers in human patients, dogs with spontaneous osteosarcomas have been suggested as a model species. Canine osteosarcomas are approximately 10 times as common and are similar to human osteosarcomas in both their histologic appearance, clinical behavior, and molecular features. Here, we apply a domain adversarial learning framework that leverages a siamese neural network architecture to distinguish different histologic subtypes of osteosarcomas while controlling for species-specific differences. We show that adversarial learning improves domain adaption of the classification model from dogs to humans when evaluated on unseen whole slide image patches achieving an average multi-class F1 score of 0.77 (CI: 0.74-0.79) and 0.80 (CI: 0.78-0.81), compared to the ground truth in dogs and humans, respectively. Furthermore, we uncover distinct clusters of dogs based on model-predicted spatial distribution of different histologic subtypes, which have markedly different responses to standard of care therapy. This repository contains the codes to train a CNN to classify histologic subtypes of osteosarcoma in a species agnostic fashion with the help of [adversarial learning](http://proceedings.mlr.press/v37/ganin15.html). The schematic diagram describing the adversarial learning approach is shown below. See [Survival analysis](Survival_analysis.md) for reproducing survival results. 
 ![](schematic_adversarial.png).
 
-If you have any questions please contact [patkar.sushant@nih.gov](patkar.sushant@nih.gov) or [amy.leblanc@nih.gov](amy.leblanc@nih.gov)
-
 ## Requirements
 <ul>
   <li> python>=3.6 </li>
@@ -61,3 +59,6 @@ The trained model weights are available at [![DOI](https://zenodo.org/badge/DOI/
 If you found this work useful for your research, please consider citing it as follows:
 
 Patkar, S, Beck J, Harmon S, Mazcko C, Turkbey B, Choyke C, Brown G Tom, Leblanc Amy. Deep Domain Adversarial Learning for Species-Agnostic Classi cation of Histologic Subtypes of Osteosarcoma. The American Journal of Pathology (Currently In Press)
+
+If you have any questions please contact [patkar.sushant@nih.gov](mailto:patkar.sushant@nih.gov) or [amy.leblanc@nih.gov](mailto:amy.leblanc@nih.gov)
+
