@@ -58,4 +58,4 @@ The trained model weights are available [here](model/temp.txt)
 ## Citing our work
 If you found this work useful for your research, please consider citing it as follows:
 
-Patkar, S, Beck J, Harmon S, Mazcko C, Turkbey B, Choyke C, Brown G Tom, Leblanc Amy. Deep Domain Adversarial Learning for Species-Agnostic Classi cation of Histologic Subtypes of Osteosarcoma. American Journal of Pathology (Currently In Press)
+Patkar, S, Beck J, Harmon S, Mazcko C, Turkbey B, Choyke C, Brown G Tom, Leblanc Amy. Deep Domain Adversarial Learning for Species-Agnostic Classi cation of Histologic Subtypes of Osteosarcoma. The American Journal of Pathology (Currently In Press)
