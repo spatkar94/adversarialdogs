@@ -53,4 +53,9 @@ python simple_feature_aggregation.py --savedir </path/to/saved/location/of/proba
 Given the estimated burden for each whole slide image, one can then perform remaining downstream analyses as described [here](Survival_analysis.md)
 
 ## Access to trained model weights
-The trained model weights are available [here](inference_prob-map_SP_full_final.py)
+The trained model weights are available [here](model/temp.txt)
+
+## Citing our work
+If you found this work useful for your research, please consider citing it as follows:
+
+Patkar, S, Beck J, Harmon S, Mazcko C, Turkbey B, Choyke C, Brown G Tom, Leblanc Amy. Deep Domain Adversarial Learning for Species-Agnostic Classi cation of Histologic Subtypes of Osteosarcoma. American Journal of Pathology (Currently In Press)
