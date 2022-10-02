@@ -5,7 +5,7 @@ adversarialdogs, v1.0.0 (Release date: 09/30/2022)
 National Institutes of Health (NIH), and an agency of the United States Government. 
 
 •	SOFTWARE: the human readable source code form, the machine readable, binary, object 
-code form, and the related documentation for the modules of the adversarialdogs v0.1.0 
+code form, and the related documentation for the modules of the adversarialdogs v1.0.0 
 software package, which is a collection of python scripts for developing a histologic 
 subtype classifier for Canine and Human Osteosarcomas. 
 
