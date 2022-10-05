@@ -53,7 +53,7 @@ python simple_feature_aggregation.py --savedir </path/to/saved/location/of/proba
 Given the estimated burden for each whole slide image, one can then perform remaining downstream analyses as described [here](Survival_analysis.md)
 
 ## Access to trained model weights
-The trained model weights are available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7131383.svg)](https://doi.org/10.5281/zenodo.7131383)
+The trained model weights are available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7149301.svg)](https://doi.org/10.5281/zenodo.7149301)
 
 ## Citing our work
 If you found this work useful for your research, please consider citing it as follows:
